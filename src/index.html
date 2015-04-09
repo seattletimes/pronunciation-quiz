@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald:700,400,300|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body>
+    <nav class="top-bar">
+      <a class="logo" href="http://seattletimes.com">
+        <img src="./assets/seattletimes.svg">
+      </a>
+    </nav>
+
+    <header>
+      <h2 class="quiz-label">Pronunciation quiz</h2>
+      <h1 class="title">Title Goes Here</h1>
+      <p class="chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula feugiat metus ac laoreet. Aliquam sagittis ipsum sit amet ex volutpat sollicitudin. Ut hendrerit mi a urna tempus pellentesque.</p>
+    </header>
+
+    <div class="quiz-container">
+      <div class="buttons">
+        <a href="." class="hidden retake"><i class="fa fa-undo"></i> <span>RETAKE QUIZ</span></a>
+        <a class="share-button"></a>
+      </div>
+
+      <div class="quiz-box"> 
+        <div class="index"></div> 
+        <div class="question-box"></div>
+        <button class="next" disabled>NEXT</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="credits">
+        Quiz by <span class="credit-name">tktktk</span>,
+        web development by <span class="credit-name">Audrey Carlsen</span>,
+        illustration by <span class="credit-name">tktktk</span>
+      </div>
+    </div>
+
+    <script>
+      <% 
+        var quizData = {};
+        json.PronunciationQuiz_Places.forEach(function(p) {
+          var id = p.placeid;
+          var place = p.place;
+          quizData[id] = { "place": place };
+        });
+        json.PronunciationQuiz_Answers.forEach(function(a, index) {
+          var id = a.placeid;
+          if (!quizData[id].answers) { quizData[id].answers = [] }
+          var answer = { 
+            "answer": a.answer,
+            "correct": a.correct,
+            "id": index
+          };
+          quizData[id].answers.push(answer);
+        });
+      %>
+      var quizData = <%= JSON.stringify(quizData) %>
+      var resultsData = <%= JSON.stringify(json.PronunciationQuiz_Results) %>
+    </script>
+    <script src="app.js"></script>
+    <%= json.project.production && !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
+    <%= json.project.production ? t.include("partials/_workHere.html") : "" %>
+  </body>
+</html>

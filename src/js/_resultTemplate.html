@@ -1,0 +1,21 @@
+<p class="result-name">Your score: <span class="green">{{score}} / 12</span></p>
+
+<p class="result-description">{{description}}</p>
+
+<p class="answer-key-name">Answer key:</p>
+
+<ol class="answer-list">
+  {{#answerKey}}
+    <li class="answer-key">
+      <div class="question-key">{{place}}</div>
+      {{#answers}}
+        <div class="options-key {{#correct}}correct{{/correct}} {{#selected}} selected{{/selected}}">
+          {{answer}}
+        </div>
+      {{/answers}}
+      
+    </li>
+  {{/answerKey}}
+</ol>
+
+{{answers}}

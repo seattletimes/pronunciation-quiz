@@ -1,0 +1,62 @@
+[
+  {
+    "title": "1",
+    "placeid": "1",
+    "place": "Puyallup"
+  },
+  {
+    "title": "2",
+    "placeid": "2",
+    "place": "Sequim"
+  },
+  {
+    "title": "3",
+    "placeid": "3",
+    "place": "Kalaloch"
+  },
+  {
+    "title": "4",
+    "placeid": "4",
+    "place": "Aeneas"
+  },
+  {
+    "title": "5",
+    "placeid": "5",
+    "place": "Enumclaw"
+  },
+  {
+    "title": "6",
+    "placeid": "6",
+    "place": "Tshletshy"
+  },
+  {
+    "title": "7",
+    "placeid": "7",
+    "place": "Camano"
+  },
+  {
+    "title": "8",
+    "placeid": "8",
+    "place": "Ephrata"
+  },
+  {
+    "title": "9",
+    "placeid": "9",
+    "place": "Skamokawa"
+  },
+  {
+    "title": "10",
+    "placeid": "10",
+    "place": "Poulsbo"
+  },
+  {
+    "title": "11",
+    "placeid": "11",
+    "place": "Keechelus"
+  },
+  {
+    "title": "12",
+    "placeid": "12",
+    "place": "Steilacoom"
+  }
+]

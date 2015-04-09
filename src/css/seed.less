@@ -1,0 +1,343 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "seattletimes";
+@import "page";
+
+@blue: @df-blue;
+@red: @df-maroon;
+@gray: @df-middle-gray;
+@dark-gray: @df-dark-gray;
+@block: 'Paytone One', sans-serif;
+@body: 'PT Sans', sans-serif;
+@narrow: 'Oswald', sans-serif;
+
+body {
+  font-family: @body;
+  font-size: 18px;
+  background: white;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+
+  @media @tablet {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+.illustration {
+  width: 100%;
+  position: relative;
+}
+
+.quiz-container {
+  width: calc(~"100% - 360px");
+  float: left;
+  border-top: 8px solid @blue;
+  margin-top: 20px;
+
+  @media @tablet {
+    width: 100%;
+  }
+
+  @media @mobile {
+    margin-top: 0;
+  }
+  
+  &.results {
+    .buttons {
+      height: 0;
+      margin-right: 0;
+    }
+
+    .quiz-box {
+      padding-top: 55px;
+      font-family: @body;
+
+      ol {
+        @media @mobile {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    @media @tablet {
+      .buttons {
+        float: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .buttons {
+    float: right;
+    margin-top: 1em;
+
+    @media @tablet {
+      margin-top: 1.5em;
+      margin-right: 1em;
+    }
+
+    .share-button {
+      display: inline-block !important;
+      width: 100%;
+      
+      &.sharer-0 label {
+        color: white !important;
+        background: @blue !important;
+        padding: 9px 10px 6px 10px !important;
+        border-radius: 0;
+
+        @media @tablet {
+          padding: 12px 15px 10px 15px !important;
+        }
+
+        span {
+          font-size: 16px !important;
+          font-family: @block !important;
+          font-weight: normal !important;
+
+          @media @tablet {
+            font-size: 14px !important;
+          }
+        }
+
+        &:hover {
+          background: @red !important;
+        }
+      }
+
+      .social.networks-5.left {
+        margin-left: -201px !important;
+      }
+
+      &.share-results {
+        width: 100%;
+        display: inline !important;
+
+        .social.networks-5.left {
+          margin-left: -52px !important;
+
+          @media @tablet {
+            margin-left: 235px !important;
+          }
+
+           @media @mobile {
+            margin-left: 39px !important;
+          }
+        }
+      }
+    }
+
+    .retake {
+      font-family: @block;
+      display: inline-block;
+      text-decoration: none;
+      border: none;
+      padding: 5px 10px;
+      font-size: 0.9em;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.2s linear;
+      background: @blue;
+      color: white;
+      cursor: pointer;
+
+      @media @tablet {
+        padding: 10px 20px;
+      }
+        
+      &:hover {
+        background: @red;
+      }
+
+      &.hidden {
+        display: none;
+      }
+
+      span {
+        padding-left: 3px;
+      }
+    }
+  }
+}
+
+.quiz-box {
+  height: 100%;
+  width: 100%;
+  font-family: @body;
+  padding: 50px 20px 30px 20px;
+  margin: 0 auto;
+
+  .index {
+    font-family: @block;
+    color: @gray;
+  }
+
+  .question-box {
+    margin-bottom: 1em;
+  }
+
+  .question {
+    font-family: @body;
+    font-size: 1.4em;
+    color: @blue;
+  }
+
+ .option {
+    font-family: @block;
+  }
+
+  input {
+    display: none;
+
+    & + label::before {
+      position: relative;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f1db";
+      margin-right: 8px;
+    }
+
+    &:checked + label::before {
+      content: "\f111";
+      color: @red;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    color: @dark-gray;
+
+    @media @mobile {
+      font-size: 16px;
+    }
+  }
+
+  .result-name {
+    font-family: @block;
+    color: @dark-gray;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 10px 0;
+  }
+
+  .result-description {
+    font-family: @body;
+    margin: 0 auto 1em auto;
+    font-size: 1.2em;
+    color: @dark-gray;
+  }
+
+  .answer-key-name {
+    font-family: @block;
+    color: @dark-gray;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin: 20px 0 10px 0;
+  }
+
+  .answer-list {
+    color: @dark-gray;
+  }
+
+  .answer-key {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .question-key {
+    padding-bottom: 5px;
+    font-family: @body;
+  }
+
+  .options-key {
+    padding: 5px 0;
+    font-family: @block;
+    font-size: 18px;
+    padding-left: 32px;
+    text-indent: -11px;
+  }
+
+  .correct, .correct.selected {
+    padding-left: 22px;
+
+    &::before {
+      color: #67b74c;
+      position: relative;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f00c";
+      margin-right: 3px;
+    }
+  }
+
+  .selected {
+    padding-left: 22px;
+
+    &::before {
+      color: #C22E1B;
+      position: relative;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f00d";
+      margin-right: 7px;
+    }
+  }
+
+  .explanation-key {
+    text-indent: 0px;
+    font-weight: 300;
+    padding-top: 8px;
+    font-size: 15px;
+    font-family: @body;
+  }
+}
+
+.green {
+  color: @red;
+}
+
+.blue {
+  color: @blue;
+}
+
+button {
+  font-family: @block;
+  display: inline-block;
+  cursor: default;
+  text-decoration: none;
+  background: #CCC;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s linear;
+
+  @media @tablet {
+    padding: 10px 20px;
+  }
+
+  &.active {
+    background: @blue;
+    cursor: pointer;
+    
+    &:hover {
+      background: @red;
+    }
+  }
+}
