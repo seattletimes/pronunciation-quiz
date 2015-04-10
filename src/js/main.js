@@ -87,4 +87,3 @@ var calculateResult = function() {
 
 showQuestion(id);
 watchInput();
-watchNext();
