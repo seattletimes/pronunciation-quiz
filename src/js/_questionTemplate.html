@@ -1,8 +1,17 @@
-<div class="question">{{place}}</div>
+<div class="map">
+  <div class="index"></div>
+  <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Washington-state-map_h.svg">
+</div>
 
-{{#answers}}
-  <p class="option">
-    <input type="radio" value="{{correct}}" name="answer" id="{{id}}">
-    <label for="{{id}}">{{answer}}</label>
-  </p>
-{{/answers}}
+<div class="question-inner">
+  <div class="question">How do you say... <span class="question-name">{{place}}?</span></div>
+
+  {{#answers}}
+    <p class="option">
+      <input type="radio" value="{{correct}}" name="answer" id="{{id}}">
+      <label for="{{id}}">{{answer}}</label> <i class="listen fa fa-volume-up"></i>
+    </p>
+  {{/answers}}
+
+  <button class="next" disabled>NEXT</button>
+</div>

@@ -30,16 +30,15 @@ body {
   }
 }
 
-.illustration {
-  width: 100%;
-  position: relative;
-}
+// .illustration {
+//   width: 100%;
+//   position: relative;
+// }
 
 .quiz-container {
-  width: calc(~"100% - 360px");
-  float: left;
+  width: 840px;
   border-top: 8px solid @blue;
-  margin-top: 20px;
+  margin: auto;
 
   @media @tablet {
     width: 100%;
@@ -83,57 +82,6 @@ body {
       margin-right: 1em;
     }
 
-    .share-button {
-      display: inline-block !important;
-      width: 100%;
-      
-      &.sharer-0 label {
-        color: white !important;
-        background: @blue !important;
-        padding: 9px 10px 6px 10px !important;
-        border-radius: 0;
-
-        @media @tablet {
-          padding: 12px 15px 10px 15px !important;
-        }
-
-        span {
-          font-size: 16px !important;
-          font-family: @block !important;
-          font-weight: normal !important;
-
-          @media @tablet {
-            font-size: 14px !important;
-          }
-        }
-
-        &:hover {
-          background: @red !important;
-        }
-      }
-
-      .social.networks-5.left {
-        margin-left: -201px !important;
-      }
-
-      &.share-results {
-        width: 100%;
-        display: inline !important;
-
-        .social.networks-5.left {
-          margin-left: -52px !important;
-
-          @media @tablet {
-            margin-left: 235px !important;
-          }
-
-           @media @mobile {
-            margin-left: 39px !important;
-          }
-        }
-      }
-    }
-
     .retake {
       font-family: @block;
       display: inline-block;
@@ -170,26 +118,56 @@ body {
   height: 100%;
   width: 100%;
   font-family: @body;
-  padding: 50px 20px 30px 20px;
+  padding: 30px 20px;
   margin: 0 auto;
 
   .index {
     font-family: @block;
     color: @gray;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   .question-box {
     margin-bottom: 1em;
+    margin: auto;
+  }
+
+  .question-inner {
+    display: inline-block;
+    min-width: 400px;
   }
 
   .question {
-    font-family: @body;
+    font-family: @block;
     font-size: 1.4em;
-    color: @blue;
+    color: #424648;
+
+    .question-name {
+      color: @df-maroon;
+    }
+  }
+
+  .map {
+    margin-left: 40px;
+    width: 200px;
+    float: left;
+    margin-right: 60px;
+    padding-top: 8px;
+
+    img {
+      padding-top: 20px;
+    }
   }
 
  .option {
-    font-family: @block;
+    font-family: @body;
+
+    .listen {
+      padding-left: 5px;
+      color: @df-charcoal;
+      font-size: 15px;
+    }
   }
 
   input {
@@ -307,14 +285,6 @@ body {
   }
 }
 
-.green {
-  color: @red;
-}
-
-.blue {
-  color: @blue;
-}
-
 button {
   font-family: @block;
   display: inline-block;
@@ -323,7 +293,7 @@ button {
   background: #CCC;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 3px 10px 5px 10px;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   transition: background 0.2s linear;
@@ -340,4 +310,12 @@ button {
       background: @red;
     }
   }
+}
+
+.video {
+  background: @df-light-gray;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  margin-top: 30px;
 }

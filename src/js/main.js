@@ -24,8 +24,8 @@ new Share(".share-button", {
 });
 
 var showQuestion = function(questionId) {
-  $(".index").html(id + " of " + Object.keys(quizData).length);
   $(".question-box").html(ich.questionTemplate(quizData[id]));
+  $(".index").html("( " + id + " of " + Object.keys(quizData).length + " )");
 };
 
 var watchInput = function() {
@@ -33,6 +33,7 @@ var watchInput = function() {
   $(".quiz-box").on("click", "input", (function(){
     $(".next").addClass("active");
     $(".next").attr("disabled", false);
+    watchNext();
   }));
 };
 
