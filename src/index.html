@@ -9,7 +9,11 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= t.include("partials/_adHead.html") %>
   </head>
+
   <body>
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
     <nav class="top-bar">
       <a class="logo" href="http://seattletimes.com">
         <img src="./assets/seattletimes.svg">
@@ -19,7 +23,7 @@
     <header>
       <h2 class="quiz-label">Pronunciation quiz</h2>
       <h1 class="title">Title Goes Here</h1>
-      <p class="chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula feugiat metus ac laoreet. Aliquam sagittis ipsum sit amet ex volutpat sollicitudin. Ut hendrerit mi a urna tempus pellentesque.<a class="share-button"></a></p>
+      <p class="chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula feugiat metus ac laoreet. Aliquam sagittis ipsum sit amet ex volutpat sollicitudin. Ut hendrerit mi a urna tempus pellentesque. Skip to Video. <a class="share-button"></a></p>
     </header>
 
     <div class="quiz-container">
@@ -39,7 +43,7 @@
         illustration by <span class="credit-name">tktktk</span>
       </div>
 
-      <div class="video"></div>
+      <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
     </div>
 
     <script>

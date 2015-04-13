@@ -1,21 +1,26 @@
-<p class="result-name">Your score: <span class="green">{{score}} / 12</span></p>
+<p class="result-name">Your score: <span class="highlight">{{score}} / 12</span></p>
 
 <p class="result-description">{{description}}</p>
 
-<p class="answer-key-name">Answer key:</p>
+<div class="answer-container">
+  <p class="answer-key-name">Answer key:</p>
 
-<ol class="answer-list">
-  {{#answerKey}}
-    <li class="answer-key">
-      <div class="question-key">{{place}}</div>
-      {{#answers}}
-        <div class="options-key {{#correct}}correct{{/correct}} {{#selected}} selected{{/selected}}">
-          {{answer}}
-        </div>
-      {{/answers}}
-      
-    </li>
-  {{/answerKey}}
-</ol>
+  <ol class="answer-list">
+    {{#answerKey}}
+      <li class="answer-key">
+        <div class="question-key">"{{place}}"</div>
+        {{#answers}}
+          <div class="options-key {{#correct}}correct{{/correct}} {{#selected}} selected{{/selected}}">
+            {{answer}}
+            {{#correct}}<i class="listen fa fa-volume-up"></i>{{/correct}}
+          </div>
+        {{/answers}}
+        
+      </li>
+    {{/answerKey}}
+  </ol>
 
-{{answers}}
+  {{answers}}
+</div>
+
+<div class="video"></div>

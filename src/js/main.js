@@ -51,6 +51,7 @@ var watchNext = function() {
 
     // move on to next question
     if (id < Object.keys(quizData).length) {
+    // if (id < 1) {
       id += 1;
       showQuestion(id);
       $(".next").removeClass("active");
@@ -68,8 +69,7 @@ var watchNext = function() {
 var calculateResult = function() {
   for (var index in resultsData) {
     var result = resultsData[index];
-    console.log(score, result.min*1, result.max*1)
-    if (score >= result.min*1 && score <= result.max*1) {
+    if (score >= result.min && score <= result.max) {
       // display result
       result.score = score;
       var answerKey = [];

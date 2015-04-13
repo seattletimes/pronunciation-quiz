@@ -16,6 +16,10 @@
 @body: 'PT Sans', sans-serif;
 @narrow: 'Oswald', sans-serif;
 
+.highlight {
+  color: @df-maroon;
+}
+
 body {
   font-family: @body;
   font-size: 18px;
@@ -142,10 +146,6 @@ body {
     font-family: @block;
     font-size: 1.4em;
     color: #424648;
-
-    .question-name {
-      color: @df-maroon;
-    }
   }
 
   .map {
@@ -224,22 +224,27 @@ body {
 
   .answer-list {
     color: @dark-gray;
+
+    .listen {
+      padding-left: 15px;
+      font-size: 14px;
+    }
   }
 
   .answer-key {
     padding-bottom: 20px;
     font-size: 18px;
+    font-family: @block;
   }
 
   .question-key {
     padding-bottom: 5px;
-    font-family: @body;
   }
 
   .options-key {
     padding: 5px 0;
-    font-family: @block;
-    font-size: 18px;
+    font-family: @body;
+    font-size: 16px;
     padding-left: 32px;
     text-indent: -11px;
   }
@@ -312,10 +317,13 @@ button {
   }
 }
 
+.answer-container {
+  display: inline-block;
+}
 .video {
   background: @df-light-gray;
   width: 400px;
   height: 300px;
-  margin: auto;
-  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
 }
