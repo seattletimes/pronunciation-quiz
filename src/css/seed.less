@@ -135,6 +135,16 @@ body {
   .question-box {
     margin-bottom: 1em;
     margin: auto;
+    height: 0px;
+    overflow: hidden;
+
+    &.transition {
+      transition: height 0.5s ease-in;
+    }
+
+    .inner {
+      padding-top: 10px;
+    }
   }
 
   .question-inner {
@@ -322,8 +332,22 @@ button {
 }
 .video {
   background: @df-light-gray;
-  width: 400px;
-  height: 300px;
-  display: inline-block;
-  vertical-align: top;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.quiz-button {
+  background: @df-maroon;
+  font-family: @block;
+  cursor: pointer;
+  color: white;
+  padding: 7px 10px 10px 10px;
+  text-transform: uppercase;
+  width: 161px;
+  margin: auto;
+
+  &:hover {
+    background: @df-middle-gray;
+  }
 }

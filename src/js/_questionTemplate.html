@@ -1,18 +1,20 @@
-<div class="map">
-  <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Washington-state-map_h.svg">
-</div>
+<div class="inner">
+  <div class="map">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Washington-state-map_h.svg">
+  </div>
 
-<div class="question-inner">
-  <div class="question">
-    <div class="index"></div>
-    How do you say... <span class="highlight">{{place}}?</span></div>
+  <div class="question-inner">
+    <div class="question">
+      <div class="index"></div>
+      How do you say... <span class="highlight">{{place}}?</span></div>
 
-  {{#answers}}
-    <p class="option">
-      <input type="radio" value="{{correct}}" name="answer" id="{{id}}">
-      <label for="{{id}}">{{answer}}</label> <i class="listen fa fa-volume-up"></i>
-    </p>
-  {{/answers}}
+    {{#answers}}
+      <p class="option">
+        <input type="radio" value="{{correct}}" name="answer" id="{{id}}">
+        <label for="{{id}}">{{answer}}</label> <i class="listen fa fa-volume-up"></i>
+      </p>
+    {{/answers}}
 
-  <button class="next" disabled>NEXT</button>
+    <button class="next" disabled>NEXT</button>
+  </div>
 </div>

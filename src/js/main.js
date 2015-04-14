@@ -85,5 +85,19 @@ var calculateResult = function() {
   // $(".recirc").addClass("show");
 };
 
-showQuestion(id);
-watchInput();
+$(".quiz-button").click(function(){
+  showQuestion(id);
+  watchInput();
+
+  var box = $(".question-box")[0];
+  box.style.height = "auto";
+  var bounds = box.getBoundingClientRect();
+  console.log(bounds.height)
+  box.style.height = "0";
+  $(".question-box").addClass("transition");
+  setTimeout(function() {
+     console.log(bounds.height)
+    box.style.height = bounds.height + "px";
+  });
+  $(".quiz-button").hide();
+});

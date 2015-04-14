@@ -3,18 +3,18 @@
     "title": "0",
     "min": "0",
     "max": "4",
-    "description": "tktktk"
+    "description": "Welcome to Washington!"
   },
   {
     "title": "5",
     "min": "5",
     "max": "8",
-    "description": "tktktk"
+    "description": "You don't get out of Seattle much, do you?"
   },
   {
     "title": "9",
     "min": "9",
     "max": "12",
-    "description": "tktktk"
+    "description": "You're clearly from here."
   }
 ]
