@@ -75,14 +75,13 @@ var calculateResult = function() {
       var answerKey = [];
       for (var question in quizData) { answerKey.push(quizData[question]) }
       result.answerKey = answerKey;
-      $(".quiz-box").html(ich.resultTemplate(result));
+      $(".question-box").html(ich.resultTemplate(result));
     }
   }
 
   $(".retake").removeClass("hidden");
   $(".quiz-container").addClass("results");
   $(".share-button").addClass("share-results");
-  // $(".recirc").addClass("show");
 };
 
 $(".quiz-button").click(function(){
@@ -92,12 +91,14 @@ $(".quiz-button").click(function(){
   var box = $(".question-box")[0];
   box.style.height = "auto";
   var bounds = box.getBoundingClientRect();
-  console.log(bounds.height)
   box.style.height = "0";
   $(".question-box").addClass("transition");
   setTimeout(function() {
-     console.log(bounds.height)
     box.style.height = bounds.height + "px";
   });
+    setTimeout(function(){
+    $(".question-box").removeClass("transition-in");
+    box.style.height = "auto";
+  }, 500);
   $(".quiz-button").hide();
 });
