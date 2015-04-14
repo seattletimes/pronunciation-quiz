@@ -8,11 +8,10 @@
   <ol class="answer-list">
     {{#answerKey}}
       <li class="answer-key">
-        <div class="question-key">"{{place}}"</div>
+        <div class="question-key">"{{place}}" <i class="listen fa fa-volume-up"></i></div>
         {{#answers}}
           <div class="options-key {{#correct}}correct{{/correct}} {{#selected}} selected{{/selected}}">
             {{answer}}
-            {{#correct}}<i class="listen fa fa-volume-up"></i>{{/correct}}
           </div>
         {{/answers}}
         
