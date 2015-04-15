@@ -49,20 +49,22 @@ var watchNext = function() {
       }
     });
 
+    $(".question-box").html(ich.resultTemplate(quizData[id]));
+
     // move on to next question
     // if (id < Object.keys(quizData).length) {
-    if (id < 1) {
-      id += 1;
-      showQuestion(id);
-      $(".next").removeClass("active");
-      $(".next").attr("disabled", true);
-      // Change button text on last question
-      if (id == Object.keys(quizData).length) {
-        $(".next").html("FINISH");
-      }
-    } else {
-      calculateResult();
-    }
+    // if (id < 1) {
+    //   id += 1;
+    //   showQuestion(id);
+    //   $(".next").removeClass("active");
+    //   $(".next").attr("disabled", true);
+    //   // Change button text on last question
+    //   if (id == Object.keys(quizData).length) {
+    //     $(".next").html("FINISH");
+    //   }
+    // } else {
+    //   calculateResult();
+    // }
   });
 };
 
@@ -92,13 +94,14 @@ $(".quiz-button").click(function(){
   box.style.height = "auto";
   var bounds = box.getBoundingClientRect();
   box.style.height = "0";
-  $(".question-box").addClass("transition");
+  $(".question-box").addClass("transition-in");
   setTimeout(function() {
     box.style.height = bounds.height + "px";
   });
-    setTimeout(function(){
+  setTimeout(function(){
     $(".question-box").removeClass("transition-in");
     box.style.height = "auto";
   }, 500);
-  $(".quiz-button").hide();
+
+  $(".quiz-button").addClass("transition-out");
 });

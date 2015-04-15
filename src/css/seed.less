@@ -122,7 +122,6 @@ body {
   width: 100%;
   font-family: @body;
   margin: 0 auto;
-  padding-bottom: 25px;
 
   .index {
     font-family: @block;
@@ -137,13 +136,14 @@ body {
     height: 0px;
     overflow: hidden;
 
-    &.transition {
-      transition: height 0.5s ease-in;
+    &.transition-in {
+      transition: height 0.5s ease-in-out;
     }
 
     .inner {
       padding-top: 25px;
       border-top: 8px solid @blue;
+      padding-bottom: 25px;
     }
   }
 
@@ -330,6 +330,7 @@ button {
 .answer-container {
   display: inline-block;
 }
+
 .video {
   background: @df-light-gray;
   width: 600px;
@@ -337,6 +338,7 @@ button {
   margin: auto;
   margin-bottom: 25px;
 }
+
 .quiz-button {
   background: @df-maroon;
   font-family: @block;
@@ -345,9 +347,22 @@ button {
   padding: 7px 10px 10px 10px;
   text-transform: uppercase;
   width: 161px;
+  height: 42px;
   margin: auto;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-property: height, padding, margin;
+  margin-bottom: 25px;
 
   &:hover {
     background: @df-middle-gray;
+  }
+
+  &.transition-out {
+    overflow: hidden;
+    height: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }
