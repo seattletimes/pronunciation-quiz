@@ -29,42 +29,52 @@ var showQuestion = function(questionId) {
 };
 
 var watchInput = function() {
-// show next button when answer is selected
+// show submit button when answer is selected
   $(".quiz-box").on("click", "input", (function(){
-    $(".next").addClass("active");
-    $(".next").attr("disabled", false);
-    watchNext();
+    $(".submit").addClass("active");
+    $(".submit").attr("disabled", false);
+    watchSubmit();
   }));
+};
+
+var watchSubmit = function() {
+  $(".submit").click(function() {
+      // score answer
+      var correct = $("input:checked").val();
+      if (correct) { 
+        score += 1;
+        quizData[id].hooray = true;
+      }
+      // keep track of selected answer
+      quizData[id].answers.forEach(function(answer) {
+        if (answer.id == $("input:checked").attr("id")) {
+          answer.selected = "x";
+        }
+      });
+
+      $(".question-box").html(ich.resultTemplate(quizData[id]));
+      $(".index").html("( " + id + " of " + Object.keys(quizData).length + " )");
+
+      // Change button text on last question
+      if (id == Object.keys(quizData).length) {
+        $(".next").html("FINISH");
+      }
+      watchNext();
+  });
 };
 
 var watchNext = function() {
   $(".next").click(function() {
-    // score answer
-    var correct = $("input:checked").val();
-    if (correct) { score += 1 }
-    // keep track of selected answer
-    quizData[id].answers.forEach(function(answer) {
-      if (answer.id == $("input:checked").attr("id")) {
-        answer.selected = "x";
-      }
-    });
-
-    $(".question-box").html(ich.resultTemplate(quizData[id]));
-
-    // move on to next question
-    // if (id < Object.keys(quizData).length) {
+    if (id < Object.keys(quizData).length) {
     // if (id < 1) {
-    //   id += 1;
-    //   showQuestion(id);
-    //   $(".next").removeClass("active");
-    //   $(".next").attr("disabled", true);
-    //   // Change button text on last question
-    //   if (id == Object.keys(quizData).length) {
-    //     $(".next").html("FINISH");
-    //   }
-    // } else {
-    //   calculateResult();
-    // }
+      // move on to next question
+      id += 1;
+      showQuestion(id);
+      $(".next").removeClass("active");
+      $(".next").attr("disabled", true);
+    } else {
+      calculateResult();
+    }
   });
 };
 

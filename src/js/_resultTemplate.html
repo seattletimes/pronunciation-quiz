@@ -1,23 +1,23 @@
-<p class="result-name">Your score: <span class="highlight">{{score}} / 12</span></p>
+<div class="inner">
+  <div class="map">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Washington-state-map_h.svg">
+  </div>
 
-<p class="result-description">{{description}}</p>
+  <div class="question-inner">
+    <div class="question">
+      <div class="index"></div>
+      {{#hooray}}Correct!{{/hooray}}
+      {{^hooray}}Wrong.{{/hooray}}
+    </div>
 
-<div class="answer-container">
-  <p class="answer-key-name">Answer key:</p>
+    {{place}}
 
-  <ol class="answer-list">
-    {{#answerKey}}
-      <li class="answer-key">
-        <div class="question-key">"{{place}}" <i class="listen fa fa-volume-up"></i></div>
-        {{#answers}}
-          <div class="options-key {{#correct}}correct{{/correct}} {{#selected}} selected{{/selected}}">
-            {{answer}}
-          </div>
-        {{/answers}}
-        
-      </li>
-    {{/answerKey}}
-  </ol>
+    {{#answers}}
+      {{#correct}}
+        <label for="{{id}}">{{answer}}</label> <i class="listen fa fa-volume-up"></i> 
+      {{/correct}}
+    {{/answers}}
 
-  {{answers}}
+    <button class="next active">NEXT <i class="next-arrow fa fa-angle-double-right"></i></button>
+  </div>
 </div>
