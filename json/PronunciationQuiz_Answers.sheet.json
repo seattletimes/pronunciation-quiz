@@ -2,14 +2,14 @@
   {
     "title": "1",
     "placeid": "1",
-    "answer": "too-LAY-lip",
-    "correct": "x"
+    "answer": "TOO-luh-lip",
+    "correct": ""
   },
   {
     "title": "1",
     "placeid": "1",
-    "answer": "TOO-lah-leep",
-    "correct": ""
+    "answer": "too-LAY-lip",
+    "correct": "x"
   },
   {
     "title": "1",
@@ -20,14 +20,14 @@
   {
     "title": "2",
     "placeid": "2",
-    "answer": "LUH-mee",
-    "correct": "x"
+    "answer": "LOO-mee",
+    "correct": ""
   },
   {
     "title": "2",
     "placeid": "2",
-    "answer": "LOO-mee",
-    "correct": ""
+    "answer": "LUH-mee",
+    "correct": "x"
   },
   {
     "title": "2",
@@ -44,14 +44,14 @@
   {
     "title": "3",
     "placeid": "3",
-    "answer": "EE-nee-us",
-    "correct": "x"
+    "answer": "AY-nee-us",
+    "correct": ""
   },
   {
     "title": "3",
     "placeid": "3",
-    "answer": "AY-nee-us",
-    "correct": ""
+    "answer": "EE-nee-us",
+    "correct": "x"
   },
   {
     "title": "4",
@@ -98,14 +98,14 @@
   {
     "title": "6",
     "placeid": "6",
-    "answer": "ta-SHELT-shy",
-    "correct": ""
+    "answer": "ta-LEE-chee",
+    "correct": "x"
   },
   {
     "title": "6",
     "placeid": "6",
-    "answer": "ta-LEE-chee",
-    "correct": "x"
+    "answer": "ta-SHELT-shy",
+    "correct": ""
   },
   {
     "title": "7",
@@ -128,13 +128,13 @@
   {
     "title": "8",
     "placeid": "8",
-    "answer": "eh-FRAH-ta",
+    "answer": "EH-frah-ta",
     "correct": ""
   },
   {
     "title": "8",
     "placeid": "8",
-    "answer": "ee-FRAH-ta",
+    "answer": "eh-FRAH-ta",
     "correct": ""
   },
   {
@@ -146,7 +146,13 @@
   {
     "title": "9",
     "placeid": "9",
-    "answer": "ska-MOCK-a-wa",
+    "answer": "ska-mo-KAH-wah",
+    "correct": ""
+  },
+  {
+    "title": "9",
+    "placeid": "9",
+    "answer": "ska-MOCK-a-wah",
     "correct": ""
   },
   {
@@ -156,9 +162,15 @@
     "correct": "x"
   },
   {
-    "title": "9",
-    "placeid": "9",
-    "answer": "ska-mo-KA-wa",
+    "title": "10",
+    "placeid": "10",
+    "answer": "PAULS-bo",
+    "correct": "x"
+  },
+  {
+    "title": "10",
+    "placeid": "10",
+    "answer": "PULLS-bo",
     "correct": ""
   },
   {
@@ -166,18 +178,6 @@
     "placeid": "10",
     "answer": "POOLS-bo",
     "correct": ""
-  },
-  {
-    "title": "10",
-    "placeid": "10",
-    "answer": "POWLS-bo",
-    "correct": ""
-  },
-  {
-    "title": "10",
-    "placeid": "10",
-    "answer": "PAULS-bo",
-    "correct": "x"
   },
   {
     "title": "11",

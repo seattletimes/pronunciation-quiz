@@ -8,6 +8,7 @@ var $ = require("jquery");
 var ich = require("icanhaz");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
+var overviewTemplate = require("./_overviewTemplate.html");
 
 var score = 0;
 var id = 1;
@@ -15,6 +16,7 @@ var id = 1;
 // Set up templates
 ich.addTemplate("questionTemplate", questionTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
+ich.addTemplate("overviewTemplate", overviewTemplate);
 
 var Share = require("share");
 new Share(".share-button", {
@@ -25,7 +27,7 @@ new Share(".share-button", {
 
 var showQuestion = function(questionId) {
   $(".question-box").html(ich.questionTemplate(quizData[id]));
-  $(".index").html("( " + id + " of " + Object.keys(quizData).length + " )");
+  $(".index").html(id + " of " + Object.keys(quizData).length);
 };
 
 var watchInput = function() {
@@ -53,7 +55,7 @@ var watchSubmit = function() {
       });
 
       $(".question-box").html(ich.resultTemplate(quizData[id]));
-      $(".index").html("( " + id + " of " + Object.keys(quizData).length + " )");
+      $(".index").html(id + " of " + Object.keys(quizData).length);
 
       // Change button text on last question
       if (id == Object.keys(quizData).length) {
@@ -87,13 +89,9 @@ var calculateResult = function() {
       var answerKey = [];
       for (var question in quizData) { answerKey.push(quizData[question]) }
       result.answerKey = answerKey;
-      $(".question-box").html(ich.resultTemplate(result));
+      $(".question-box").html(ich.overviewTemplate(result));
     }
   }
-
-  $(".retake").removeClass("hidden");
-  $(".quiz-container").addClass("results");
-  $(".share-button").addClass("share-results");
 };
 
 $(".quiz-button").click(function(){
@@ -104,12 +102,10 @@ $(".quiz-button").click(function(){
   box.style.height = "auto";
   var bounds = box.getBoundingClientRect();
   box.style.height = "0";
-  $(".question-box").addClass("transition-in");
   setTimeout(function() {
     box.style.height = bounds.height + "px";
   });
   setTimeout(function(){
-    $(".question-box").removeClass("transition-in");
     box.style.height = "auto";
   }, 500);
 

@@ -26,20 +26,16 @@
     </header>
 
     <div class="quiz-container">
-      <div class="buttons">
-        <a href="." class="hidden retake"><i class="fa fa-undo"></i> <span>RETAKE QUIZ</span></a>
-      </div>
-
       <div class="quiz-box"> 
         <div class="video"></div>
-          <div class="quiz-button">Take our quiz</div>
+          <button class="quiz-button">Take our quiz</button>
         <div class="question-box"></div>
       </div>
 
       <div class="divider"></div>
 
       <div class="credits">
-        Quiz by <span class="credit-name">Seattle Times staff</span>, graphics by <span class="credit-name">tktktk</span>, development by <span class="credit-name">Audrey Carlsen</span>
+        <span class="credit">Quiz by <span class="credit-name">Seattle Times staff</span>,</span> <span class="credit">development by <span class="credit-name">Audrey Carlsen</span>,</span> <span class="credit">graphics by <span class="credit-name">tktktk</span><span>
       </div>
 
       <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
