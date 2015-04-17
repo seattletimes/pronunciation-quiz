@@ -28,14 +28,17 @@
     <div class="quiz-container">
       <div class="quiz-box"> 
         <div class="video"></div>
-          <button class="quiz-button">Take our quiz</button>
+        <div class="button-wrapper">
+          <div class="sub-chatter">Think you can do better?</div>
+          <button class="quiz-button">Take the quiz!</button>
+        </div>
         <div class="question-box"></div>
       </div>
 
       <div class="divider"></div>
 
       <div class="credits">
-        <span class="credit">Quiz by <span class="credit-name">Seattle Times staff</span>,</span> <span class="credit">development by <span class="credit-name">Audrey Carlsen</span>,</span> <span class="credit">graphics by <span class="credit-name">tktktk</span><span>
+        <span class="credit"><span class="credit">Reporting and development by <span class="credit-name">Audrey Carlsen</span>,</span> <span class="credit">graphics by <span class="credit-name">tktktk</span>.<span>
       </div>
 
       <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
@@ -45,9 +48,10 @@
       <% 
         var quizData = {};
         json.PronunciationQuiz_Places.forEach(function(p) {
-          var id = p.placeid;
-          var place = p.place;
-          quizData[id] = { "place": place };
+          quizData[p.placeid] = { 
+            "place": p.place,
+            "desc": p.description
+          };
         });
         json.PronunciationQuiz_Answers.forEach(function(a, index) {
           var id = a.placeid;

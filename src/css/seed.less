@@ -46,10 +46,28 @@ body {
   width: 600px;
   height: 400px;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+}
+
+.button-wrapper {
+  height: 100px;
+  transition: height 0.5s ease-in-out;
+
+  &.transition-out {
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+.sub-chatter {
+  color: @dark-gray;
+  font-family: @block;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .quiz-button {
+  font-size: 18px;
   background: @secondary;
   cursor: pointer;
   display: inherit;
@@ -58,21 +76,14 @@ body {
   height: 42px;
   margin: auto;
   margin-bottom: 25px;
-  transition: height 0.5s ease-in-out,
-              padding 0.5s ease-in-out,
-              margin 0.5s ease-in-out,
-              background 0.2s linear;
+
+  @media @tablet {
+    font-size: 16px;
+    padding-top: 8px;
+  }
 
   &:hover {
     background: @df-middle-gray;
-  }
-
-  &.transition-out {
-    overflow: hidden;
-    height: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
   }
 }
 
@@ -98,10 +109,33 @@ body {
   .question-inner {
     display: inline-block;
 
-    .question {
+    .question, .answer {
       font-family: @block;
       font-size: 1.4em;
       color: #424648;
+    }
+
+    .answer {
+      .answer-box {
+        background: #EEE;
+        padding: 8px 24px 12px 24px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        .correct-answer {
+          font-family: @body;
+          font-size: 18px;
+          padding-left: 5px;
+          font-weight: bold;
+        }
+
+        .desc {
+          font-family: @body;
+          font-size: 16px;
+          padding-top: 5px;
+          width: 450px;
+        }
+      }
     }
 
     input {
@@ -132,14 +166,15 @@ body {
     }
 
     .listen {
-      padding-left: 5px;
+      padding-left: 3px;
       color: @df-charcoal;
     }
   }
 
   .index {
     color: @gray;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .result-name {

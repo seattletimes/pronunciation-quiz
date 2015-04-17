@@ -42,19 +42,23 @@ var watchInput = function() {
 var watchSubmit = function() {
   $(".submit").click(function() {
       // score answer
+      var answerData = {};
+      answerData.place = quizData[id].place;
       var correct = $("input:checked").val();
+      console.log($("input:checked").val())
       if (correct) { 
         score += 1;
-        quizData[id].hooray = true;
+        answerData.hooray = true;
       }
       // keep track of selected answer
-      quizData[id].answers.forEach(function(answer) {
-        if (answer.id == $("input:checked").attr("id")) {
-          answer.selected = "x";
+      quizData[id].answers.forEach(function(a) {
+        if (a.correct) {
+          answerData.correct = a.answer;
+          answerData.description = quizData[id].desc;
         }
       });
 
-      $(".question-box").html(ich.resultTemplate(quizData[id]));
+      $(".question-box").html(ich.resultTemplate(answerData));
       $(".index").html(id + " of " + Object.keys(quizData).length);
 
       // Change button text on last question
@@ -109,5 +113,5 @@ $(".quiz-button").click(function(){
     box.style.height = "auto";
   }, 500);
 
-  $(".quiz-button").addClass("transition-out");
+  $(".button-wrapper").addClass("transition-out");
 });

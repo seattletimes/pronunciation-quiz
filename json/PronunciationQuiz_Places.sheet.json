@@ -2,61 +2,73 @@
   {
     "title": "1",
     "placeid": "1",
-    "place": "Tulalip"
+    "place": "Tulalip",
+    "description": "This town, which also serves as headquarters for the Tulalip Indian Reservation, derives its name from the native word \"duh-hlay-lup,\" meaning \"a wide bay with a small mouth.\""
   },
   {
     "title": "2",
     "placeid": "2",
-    "place": "Lummi"
+    "place": "Lummi",
+    "description": "Lummi Island, located northeast of the San Juan Islands, was renamed in 1853 in honor of the indigenous people of the Lummi Nation."
   },
   {
     "title": "3",
     "placeid": "3",
-    "place": "Aeneas"
+    "place": "Aeneas",
+    "description": "Aeneas was named for native chief Aeneas Somday, who served as guide for American surveyors in the 19th century. His name is said to have been a distortion of the French name \"Ignace.\""
   },
   {
     "title": "4",
     "placeid": "4",
-    "place": "Spokane"
+    "place": "Spokane",
+    "description": "Spokane is the second largest city in Washington State. The city takes its name from the region's first residents, the Spokane people, whose name means \"Children of the Sun\" in Salishan."
   },
   {
     "title": "5",
     "placeid": "5",
-    "place": "Enumclaw"
+    "place": "Enumclaw",
+    "description": "\"Enumclaw\" is a native word, variously translated as \"place of the evil spirits” or \"thundering noise.\" Native legend claims nearby Enumclaw Mountain as the home of Thunder Bird."
   },
   {
     "title": "6",
     "placeid": "6",
-    "place": "Tshletshy"
+    "place": "Tshletshy",
+    "description": "This creek in Olympic National Park takes its name from the Chehalis word \"tsa-lot-chi,\" meaning \"to pull up, roots and all.\""
   },
   {
     "title": "7",
     "placeid": "7",
-    "place": "Camano"
+    "place": "Camano",
+    "description": "Camano Island was given its name by a Spanish lieutenant in 1790 in honor of explorer Jacinto Caamaño."
   },
   {
     "title": "8",
     "placeid": "8",
-    "place": "Ephrata"
+    "place": "Ephrata",
+    "description": "First dubbed \"Indian Grave Springs\" by white settlers, this town has been through several name changes. In 1892, its current name was bestowed by railworkers, allegedly likening the region's landscape to that of the Holy Land."
   },
   {
     "title": "9",
     "placeid": "9",
-    "place": "Skamokawa"
+    "place": "Skamokawa",
+    "description": "This river community, once known as \"Little Venice\", is now named in honor of Chief Skamakowa, whose name means \"smoke on the water\" in Chinook."
   },
   {
     "title": "10",
     "placeid": "10",
-    "place": "Poulsbo"
+    "place": "Poulsbo",
+    "description": "This town is named after \"Poulsbomoen,\" the Norwegian town where one of Poulsbo's first residents spent his early years."
   },
   {
     "title": "11",
     "placeid": "11",
-    "place": "Keechelus"
+    "place": "Keechelus",
+    "description": "This lake is the source of the Yakima River. Its name comes from the native word for \"few fish,\" in contrast with nearby Kachess Lake, whose name means \"many fish.\""
   },
   {
     "title": "12",
     "placeid": "12",
-    "place": "Steilacoom"
+    "place": "Steilacoom",
+    "description": "Steilacoom is the oldest incorporated town in Washington State. It takes the name of the local tribe, first recorded by settlers as \"Chil-a-coom.\" This translates to \"flowers here,\" likely referring to the region's distinctive pink wildflowers."
   }
 ]

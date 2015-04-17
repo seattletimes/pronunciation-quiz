@@ -4,19 +4,18 @@
   </div>
 
   <div class="question-inner">
-    <div class="question">
+    <div class="answer">
       <div class="index"></div>
-      {{#hooray}}Correct!{{/hooray}}
+      {{#hooray}}Right!{{/hooray}}
       {{^hooray}}Wrong.{{/hooray}}
+
+      <div class="answer-box">
+        <span class="highlight">{{place}}</span>
+        <span class="correct-answer">"{{correct}}" <i class="listen fa fa-volume-up"></i></span>
+        <div class="desc">{{description}}</div>
+      </div>
     </div>
 
-    {{place}}
-
-    {{#answers}}
-      {{#correct}}
-        <label for="{{id}}">{{answer}}</label> <i class="listen fa fa-volume-up"></i> 
-      {{/correct}}
-    {{/answers}}
 
     <button class="next active">NEXT <i class="next-arrow fa fa-angle-double-right"></i></button>
   </div>
