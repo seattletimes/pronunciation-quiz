@@ -45,7 +45,6 @@ var watchSubmit = function() {
       var answerData = {};
       answerData.place = quizData[id].place;
       var correct = $("input:checked").val();
-      console.log($("input:checked").val())
       if (correct) { 
         score += 1;
         answerData.hooray = true;
@@ -54,6 +53,7 @@ var watchSubmit = function() {
       quizData[id].answers.forEach(function(a) {
         if (a.correct) {
           answerData.correct = a.answer;
+          answerData.audio = a.audio;
           answerData.description = quizData[id].desc;
         }
       });
@@ -114,4 +114,8 @@ $(".quiz-button").click(function(){
   }, 500);
 
   $(".button-wrapper").addClass("transition-out");
+});
+
+$(".quiz-container").on("click", ".listen", function(e){
+  $(e.target).next("audio")[0].play();
 });

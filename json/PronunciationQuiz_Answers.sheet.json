@@ -3,216 +3,253 @@
     "title": "1",
     "placeid": "1",
     "answer": "TOO-luh-lip",
-    "correct": ""
+    "correct": "",
+    "audio": "2_TOO-luh-lip.mp3"
   },
   {
     "title": "1",
     "placeid": "1",
     "answer": "too-LAY-lip",
-    "correct": "x"
+    "correct": "x",
+    "audio": "3_too-LAY-lip.mp3"
   },
   {
     "title": "1",
     "placeid": "1",
     "answer": "too-LAH-lip",
-    "correct": ""
+    "correct": "",
+    "audio": "4_too-LAH-lip.mp3"
   },
   {
     "title": "2",
     "placeid": "2",
     "answer": "LOO-mee",
-    "correct": ""
+    "correct": "",
+    "audio": "5_LOO-mee.mp3"
   },
   {
     "title": "2",
     "placeid": "2",
     "answer": "LUH-mee",
-    "correct": "x"
+    "correct": "x",
+    "audio": "6_LUH-mee.mp3"
   },
   {
     "title": "2",
     "placeid": "2",
     "answer": "LUH-my",
-    "correct": ""
+    "correct": "",
+    "audio": "7_LUH-my.mp3"
   },
   {
     "title": "3",
     "placeid": "3",
     "answer": "uh-NEE-us",
-    "correct": ""
+    "correct": "",
+    "audio": "8_uh-NEE-us.mp3"
   },
   {
     "title": "3",
     "placeid": "3",
     "answer": "AY-nee-us",
-    "correct": ""
+    "correct": "",
+    "audio": "9_AY-nee-us.mp3"
   },
   {
     "title": "3",
     "placeid": "3",
     "answer": "EE-nee-us",
-    "correct": "x"
+    "correct": "x",
+    "audio": "10_EE-nee-us.mp3"
   },
   {
     "title": "4",
     "placeid": "4",
     "answer": "spo-CAN",
-    "correct": "x"
+    "correct": "x",
+    "audio": "11_spo-CAN.mp3"
   },
   {
     "title": "4",
     "placeid": "4",
     "answer": "spo-CANE",
-    "correct": ""
+    "correct": "",
+    "audio": "12_spo-CANE.mp3"
   },
   {
     "title": "4",
     "placeid": "4",
     "answer": "SPOH-cah-nee",
-    "correct": ""
+    "correct": "",
+    "audio": "13_SPOH-cah-nee.mp3"
   },
   {
     "title": "5",
     "placeid": "5",
-    "answer": "ee-NUM-cue-lah",
-    "correct": ""
-  },
-  {
-    "title": "5",
-    "placeid": "5",
-    "answer": "EE-num-claw",
-    "correct": "x"
-  },
-  {
-    "title": "5",
-    "placeid": "5",
-    "answer": "HUE-man-claw",
-    "correct": ""
-  },
-  {
-    "title": "6",
-    "placeid": "6",
-    "answer": "SHLET-shee",
-    "correct": ""
-  },
-  {
-    "title": "6",
-    "placeid": "6",
-    "answer": "ta-LEE-chee",
-    "correct": "x"
-  },
-  {
-    "title": "6",
-    "placeid": "6",
-    "answer": "ta-SHELT-shy",
-    "correct": ""
-  },
-  {
-    "title": "7",
-    "placeid": "7",
-    "answer": "ca-MAH-no",
-    "correct": ""
-  },
-  {
-    "title": "7",
-    "placeid": "7",
-    "answer": "ca-MAY-no",
-    "correct": "x"
-  },
-  {
-    "title": "7",
-    "placeid": "7",
-    "answer": "ca-MAN-oh",
-    "correct": ""
-  },
-  {
-    "title": "8",
-    "placeid": "8",
     "answer": "EH-frah-ta",
-    "correct": ""
+    "correct": "",
+    "audio": "23_EH-frah-ta.mp3"
   },
   {
-    "title": "8",
-    "placeid": "8",
+    "title": "5",
+    "placeid": "5",
     "answer": "eh-FRAH-ta",
-    "correct": ""
+    "correct": "",
+    "audio": "24_eh-FRAH-ta.mp3"
+  },
+  {
+    "title": "5",
+    "placeid": "5",
+    "answer": "ee-FRAY-ta",
+    "correct": "x",
+    "audio": "25a_ee-FRAY-ta.mp3",
+    "_ciyn3": "<--??"
+  },
+  {
+    "title": "6",
+    "placeid": "6",
+    "answer": "ca-MAH-no",
+    "correct": "",
+    "audio": "20_ca-MAH-no.mp3"
+  },
+  {
+    "title": "6",
+    "placeid": "6",
+    "answer": "ca-MAY-no",
+    "correct": "x",
+    "audio": "21_ca-MAY-no.mp3"
+  },
+  {
+    "title": "6",
+    "placeid": "6",
+    "answer": "ca-MAN-oh",
+    "correct": "",
+    "audio": "22_ca-MAN-oh.mp3"
+  },
+  {
+    "title": "7",
+    "placeid": "7",
+    "answer": "SHLET-shee",
+    "correct": "",
+    "audio": "17_SHLET-shee.mp3"
+  },
+  {
+    "title": "7",
+    "placeid": "7",
+    "answer": "ta-LEE-chee",
+    "correct": "x",
+    "audio": "18_ta-LEE-chee.mp3"
+  },
+  {
+    "title": "7",
+    "placeid": "7",
+    "answer": "ta-SHELT-shy",
+    "correct": "",
+    "audio": "19b_ta-SHELT-shy.mp3"
   },
   {
     "title": "8",
     "placeid": "8",
-    "answer": "ee-FRAY-ta",
-    "correct": "x"
+    "answer": "ee-NUM-cue-lah",
+    "correct": "",
+    "audio": "14_ee-NUM-cue-lah.mp3"
+  },
+  {
+    "title": "8",
+    "placeid": "8",
+    "answer": "EE-num-claw",
+    "correct": "x",
+    "audio": "15_EE-num-claw.mp3"
+  },
+  {
+    "title": "8",
+    "placeid": "8",
+    "answer": "HUE-man-claw",
+    "correct": "",
+    "audio": "16_HUE-man-claw.mp3"
   },
   {
     "title": "9",
     "placeid": "9",
-    "answer": "ska-mo-KAH-wah",
-    "correct": ""
-  },
-  {
-    "title": "9",
-    "placeid": "9",
-    "answer": "ska-MOCK-a-wah",
-    "correct": ""
-  },
-  {
-    "title": "9",
-    "placeid": "9",
-    "answer": "ska-MOCK-a-way",
-    "correct": "x"
-  },
-  {
-    "title": "10",
-    "placeid": "10",
     "answer": "PAULS-bo",
-    "correct": "x"
+    "correct": "x",
+    "audio": "29_PAULS-bo.mp3"
   },
   {
-    "title": "10",
-    "placeid": "10",
+    "title": "9",
+    "placeid": "9",
     "answer": "PULLS-bo",
-    "correct": ""
+    "correct": "",
+    "audio": "30_PULLS-bo.mp3"
+  },
+  {
+    "title": "9",
+    "placeid": "9",
+    "answer": "POOLS-bo",
+    "correct": "",
+    "audio": "31_POOLS-bo.mp3"
   },
   {
     "title": "10",
     "placeid": "10",
-    "answer": "POOLS-bo",
-    "correct": ""
+    "answer": "ska-mo-KAH-wah",
+    "correct": "",
+    "audio": "26_ska-mo-KAH-wah.mp3"
+  },
+  {
+    "title": "10",
+    "placeid": "10",
+    "answer": "ska-MOCK-a-wah",
+    "correct": "",
+    "audio": "27_ska-MOCK-a-wah.mp3"
+  },
+  {
+    "title": "10",
+    "placeid": "10",
+    "answer": "ska-MOCK-a-way",
+    "correct": "x",
+    "audio": "28_ska-MA-ka-way.mp3"
   },
   {
     "title": "11",
     "placeid": "11",
     "answer": "ka-CHEES",
-    "correct": ""
+    "correct": "",
+    "audio": "32_ka-CHEES.mp3"
   },
   {
     "title": "11",
     "placeid": "11",
     "answer": "KETCH-uh-less",
-    "correct": "x"
+    "correct": "x",
+    "audio": "33_KETCH-uh-less.mp3"
   },
   {
     "title": "11",
     "placeid": "11",
     "answer": "KEE-cha-luss",
-    "correct": ""
+    "correct": "",
+    "audio": "34_KEE-cha-luss.mp3"
   },
   {
     "title": "12",
     "placeid": "12",
     "answer": "STEE-la-coom",
-    "correct": ""
+    "correct": "",
+    "audio": "35_STEE-la-coom.mp3"
   },
   {
     "title": "12",
     "placeid": "12",
     "answer": "STAY-la-com",
-    "correct": ""
+    "correct": "",
+    "audio": "36_STAY-la-com.mp3"
   },
   {
     "title": "12",
     "placeid": "12",
     "answer": "STILL-a-cum",
-    "correct": "x"
+    "correct": "x",
+    "audio": "37_STILL-a-cum.mp3"
   }
 ]
