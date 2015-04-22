@@ -38,8 +38,7 @@ var watchInput = function() {
   }));
 };
 
-var watchSubmit = function() {
-  $(".submit").click(function() {
+$(".quiz-container").on("click", ".submit", function() {
       // score answer
       var answerData = {};
       answerData.place = quizData[id].place;
@@ -66,7 +65,7 @@ var watchSubmit = function() {
       }
       watchNext();
   });
-};
+
 
 var watchNext = function() {
   $(".next").click(function() {
@@ -99,7 +98,6 @@ var calculateResult = function() {
 $(".quiz-button").click(function(){
   showQuestion(id);
   watchInput();
-  watchSubmit();
 
   var box = $(".question-box")[0];
   box.style.height = "auto";
