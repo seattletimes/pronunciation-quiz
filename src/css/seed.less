@@ -14,6 +14,7 @@
 @dark-gray: @df-dark-gray;
 @block: 'Paytone One', sans-serif;
 @body: 'PT Sans', sans-serif;
+@break: ~"(max-width: 840px)";
 
 .highlight {
   color: @secondary;
@@ -26,7 +27,7 @@ body {
   margin: auto;
   padding: 10px;
 
-  @media @tablet {
+  @media @break {
     font-size: 16px;
     padding: 0;
   }
@@ -36,19 +37,27 @@ body {
   width: 840px;
   margin: auto;
 
-  @media @tablet {
+  @media @break {
     width: 100%;
   }
 }
 
-.video {
+.video-wrapper {
+  width: 100%;
   margin: auto;
-  width: 700px;
+}
+
+.video {
+  width: 100%;
+  height: 0;
+  padding-bottom: percentage(9/16);
+  position: relative;
 
   iframe {
+    position: absolute;
     border: none;
     width: 100%;
-    height: 390px;
+    height: 100%;
   }
 }
 
@@ -80,7 +89,7 @@ body {
   margin: auto;
   margin-bottom: 25px;
 
-  @media @tablet {
+  @media @break {
     font-size: 16px;
     padding-top: 8px;
     width: 165px;
@@ -101,7 +110,7 @@ body {
     border-top: 8px solid @primary;
     padding-bottom: 25px;
 
-    @media @tablet {
+    @media @break {
       padding: 25px 40px;
     }
 
