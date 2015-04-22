@@ -35,7 +35,6 @@ var watchInput = function() {
   $(".quiz-box").on("click", "input", (function(){
     $(".submit").addClass("active");
     $(".submit").attr("disabled", false);
-    watchSubmit();
   }));
 };
 
@@ -100,6 +99,7 @@ var calculateResult = function() {
 $(".quiz-button").click(function(){
   showQuestion(id);
   watchInput();
+  watchSubmit();
 
   var box = $(".question-box")[0];
   box.style.height = "auto";
