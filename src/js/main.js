@@ -72,7 +72,6 @@ var watchSubmit = function() {
 var watchNext = function() {
   $(".next").click(function() {
     if (id < Object.keys(quizData).length) {
-    // if (id < 1) {
       // move on to next question
       id += 1;
       showQuestion(id);
