@@ -52,6 +52,7 @@ $(".quiz-container").on("click", ".submit", function() {
         if (a.correct) {
           answerData.correct = a.answer;
           answerData.audio = a.audio;
+          answerData.image = quizData[id].image;
           answerData.description = quizData[id].desc;
         }
       });

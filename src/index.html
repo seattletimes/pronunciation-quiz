@@ -57,7 +57,8 @@
         json.PronunciationQuiz_Places.forEach(function(p) {
           quizData[p.placeid] = { 
             "place": p.place,
-            "desc": p.description
+            "desc": p.description,
+            "image": p.image
           };
         });
         json.PronunciationQuiz_Answers.forEach(function(a, index) {
