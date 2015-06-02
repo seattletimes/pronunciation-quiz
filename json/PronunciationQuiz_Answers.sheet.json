@@ -58,9 +58,9 @@
   {
     "title": "3",
     "placeid": "3",
-    "answer": "EE-nee-us",
+    "answer": "ANN-ee-us",
     "correct": "x",
-    "audio": "10_EE-nee-us.mp3"
+    "audio": "10_ANN-ee-us.mp3"
   },
   {
     "title": "4",
@@ -102,8 +102,7 @@
     "placeid": "5",
     "answer": "ee-FRAY-ta",
     "correct": "x",
-    "audio": "25a_ee-FRAY-ta.mp3",
-    "_ciyn3": "<--??"
+    "audio": "25a_ee-FRAY-ta.mp3"
   },
   {
     "title": "6",
