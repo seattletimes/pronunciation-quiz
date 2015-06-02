@@ -3,84 +3,96 @@
     "title": "1",
     "placeid": "1",
     "place": "Tulalip",
-    "description": "This town, which serves as headquarters for the Tulalip Indian Reservation, derives its name from the native word \"duh-hlay-lup,\" meaning \"a wide bay with a small mouth.\"",
-    "image": "tulalip.gif"
+    "description": "This town, which serves as headquarters for the Tulalip Indian Reservation, derives its name from the word \"duh-hlay-lup,\" meaning either \"a wide bay with a small mouth\" or \"steer around the sand bar,\" a warning to those who canoed through the bay.",
+    "image": "tulalip.gif",
+    "notes": "Rewritten."
   },
   {
     "title": "2",
     "placeid": "2",
     "place": "Lummi",
     "description": "This island, located northeast of the San Juan Islands, was renamed in 1853 in honor of the indigenous people of the Lummi Nation.",
-    "image": "lummi.gif"
+    "image": "lummi.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "3",
     "placeid": "3",
     "place": "Aeneas",
-    "description": "This town was named for native chief Aeneas Somday, who served as guide for American surveyors in the 19th century. His name is said to have been a distortion of the French name \"Ignace.\"",
-    "image": "aeneas.gif"
+    "description": "This town was named for Chief Aeneas, who settled in present-day Okanogan County in 1863. The name \"Aeneas\" is derived from the French name \"Ignace.\"",
+    "image": "aeneas.gif",
+    "notes": "Need to re-record place name: Ann e us."
   },
   {
     "title": "4",
     "placeid": "4",
     "place": "Spokane",
-    "description": "Spokane is the second largest city in Washington State. The city takes its name from the region's first residents, the Spokane people, whose name means \"Children of the Sun\" in Salishan.",
-    "image": "spokane.gif"
+    "description": "Spokane is the second-largest city in Washington state. The city takes its name from the region's first residents, the Spokane people, whose name means \"Children of the Sun.\"",
+    "image": "spokane.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "5",
     "placeid": "5",
     "place": "Ephrata",
-    "description": "First dubbed \"Indian Grave Springs\" by white settlers, this town has been through several name changes. In 1892, its current name was bestowed by railworkers, allegedly likening the region's landscape to that of the Holy Land.",
-    "image": "ephrata.gif"
+    "description": "First dubbed \"Indian Graves\" by white settlers, this town has been through several name changes. In 1892, the town was renamed Ephrata by Great Northern Railway Company workers, reportedly after the biblical town of \"Ephratah.\"",
+    "image": "ephrata.gif",
+    "notes": "Rewritten."
   },
   {
     "title": "6",
     "placeid": "6",
     "place": "Camano",
-    "description": "This island was given its name by a Spanish lieutenant in 1790 in honor of explorer Jacinto Caamaño.",
-    "image": "camano.gif"
+    "description": "This island was given its name by a Spanish lieutenant in 1790 in honor of explorer Jacinto Caamaño. The island was briefly named \"McDonough's Island\" before a British naval officer reverted the island's name to Camano.",
+    "image": "camano.gif",
+    "notes": "Rewritten."
   },
   {
     "title": "7",
     "placeid": "7",
     "place": "Tshletshy",
-    "description": "This creek in Olympic National Park takes its name from the Chehalis word \"tsa-lot-chi,\" meaning \"to pull up, roots and all.\"",
-    "image": "tshletshy.gif"
+    "description": "This creek in Olympic National Park takes its name from the Chehalis word \"tsa-lot-chi\" or \"tus-lot-shee,\" meaning to \"... pull up, roots and all,\" in reference to the Chinook wind.",
+    "image": "tshletshy.gif",
+    "notes": "Rewritten."
   },
   {
     "title": "8",
     "placeid": "8",
     "place": "Enumclaw",
-    "description": "\"Enumclaw\" is a native word, variously translated as \"place of the evil spirits” or \"thundering noise.\" According to native mythology, nearby Enumclaw Mountain was the home of the legendary Thunderbird.",
-    "image": "enumclaw.gif"
+    "description": "\"Enumclaw\" is a Salish word, variously translated as \"place of the evil spirits” or \"thundering noise.\" According to local mythology, nearby Enumclaw Mountain was the home of the legendary Thunderbird.",
+    "image": "enumclaw.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "9",
     "placeid": "9",
     "place": "Poulsbo",
-    "description": "The name comes from a Norwegian town where one of Poulsbo's first residents spent his early years. It is said to be a misspelling of \"Paulsbo.\"",
-    "image": "poulsbo.gif"
+    "description": "The name allegedly comes from a Norwegian town where one of Poulsbo's first residents was from. It is said to be a misspelling of \"Paulsbo\" in Norway.",
+    "image": "poulsbo.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "10",
     "placeid": "10",
     "place": "Skamokawa",
-    "description": "This river community, once known as \"Little Venice\", is now named in honor of Chief Skamakowa, whose name means \"smoke on the water\" in Chinook.",
-    "image": "skamokawa.gif"
+    "description": "This river community in Wahkiakum County, once known as \"Little Venice,\" is now named in honor of Chief Skamokowa, whose name means \"smoke on the water\" in Chinook.",
+    "image": "skamokawa.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "11",
     "placeid": "11",
     "place": "Keechelus",
-    "description": "This lake is the source of the Yakima River. Its name comes from the native word for \"few fish,\" in contrast with nearby Kachess Lake, whose name means \"many fish.\"",
-    "image": "keechelus.gif"
+    "description": "This lake is the source of the Yakima River. Its name comes from the word for \"few fish,\" in contrast with nearby Kachess Lake, whose name means \"many fish.\"",
+    "image": "keechelus.gif",
+    "notes": "Consistent with Marilyn's note"
   },
   {
     "title": "12",
     "placeid": "12",
     "place": "Steilacoom",
-    "description": "Steilacoom is the oldest incorporated town in Washington State. It takes the name of the local tribe, first recorded by settlers as \"Chil-a-coom.\" This translates to \"flowers here,\" likely referring to the region's distinctive pink wildflowers.",
-    "image": "steilacoom.gif"
+    "description": "Steilacoom is the oldest incorporated town in Washington state. One account says the town takes the name of the local tribe, first recorded by white settlers as \"Chil-a-coom.\" Another account says the name came from pink wildflowers that were once common to the area.",
+    "image": "steilacoom.gif",
+    "notes": "Rewritten."
   }
 ]
