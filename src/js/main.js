@@ -96,23 +96,8 @@ var calculateResult = function() {
   }
 };
 
-$(".quiz-button").click(function(){
-  showQuestion(id);
-  watchInput();
-
-  var box = $(".question-box")[0];
-  box.style.height = "auto";
-  var bounds = box.getBoundingClientRect();
-  box.style.height = "0";
-  setTimeout(function() {
-    box.style.height = bounds.height + "px";
-  });
-  setTimeout(function(){
-    box.style.height = "auto";
-  }, 500);
-
-  $(".button-wrapper").addClass("transition-out");
-});
+showQuestion(id);
+watchInput();
 
 $(".quiz-container").on("click", ".listen", function(e){
   $(e.target).next("audio")[0].play();
