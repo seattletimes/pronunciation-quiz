@@ -95,6 +95,7 @@ header {
 
 button {
   font-family: @block;
+  font-weight: 600;
   cursor: default;
   color: white;
   border: none;
@@ -112,11 +113,11 @@ button {
   }
 
   &.active {
-    background: @primary;
+    background: @df-blue;
     cursor: pointer;
     
     &:hover {
-      background: @red;
+      background: darken(@df-blue, 10%);
     }
   }
 }

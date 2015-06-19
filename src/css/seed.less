@@ -8,7 +8,6 @@
 @import "seattletimes";
 @import "page";
 
-@primary: @df-blue;
 @red: @df-maroon;
 @gray: @df-middle-gray;
 @dark-gray: @df-dark-gray;
@@ -92,6 +91,7 @@ body {
 }
 
 .question-box {
+
   .inner {
     padding-top: 25px;
     border-top: 8px solid @df-border-gray;
@@ -124,8 +124,9 @@ body {
 
     .question, .answer {
       font-family: @block;
+      font-weight: 600;
       font-size: 1.4em;
-      color: #424648;
+      color: @dark-gray;
     }
 
     .answer {
@@ -169,6 +170,7 @@ body {
     label {
       cursor: pointer;
       color: @dark-gray;
+      font-weight: 600;
 
       @media @mobile {
         font-size: 16px;
@@ -181,9 +183,11 @@ body {
       padding: 5px;
       color: @df-charcoal;
       cursor: pointer;
+      border-bottom: 1px dotted @red;
 
       &:hover {
-        color: @df-maroon;
+        color: @red;
+        border-color: @gray;
       }
     }
   }
@@ -191,7 +195,6 @@ body {
   .index {
     color: @gray;
     font-size: 14px;
-    font-weight: bold;
   }
 
   .result-name {
