@@ -21,7 +21,7 @@ ich.addTemplate("overviewTemplate", overviewTemplate);
 var Share = require("share");
 new Share(".share-button", {
   ui: {
-    flyout: "bottom left"
+    flyout: "top center"
   }
 });
 
