@@ -62,7 +62,7 @@ $(".quiz-container").on("click", ".submit", function() {
 
       // Change button text on last question
       if (id == Object.keys(quizData).length) {
-        $(".next").html("FINISH");
+        $(".next").html("See results");
       }
       watchNext();
   });
