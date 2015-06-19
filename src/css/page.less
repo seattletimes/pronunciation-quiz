@@ -62,16 +62,20 @@ header {
 
   .chatter {
     a {
-      color: inherit;
-      border-bottom: 1px dotted @red;
+      color: @red;
 
       &:hover {
         border-bottom: 2px solid @red;
+      }
+
+      &.share-button {
+        border: none;
       }
     }
 
     .share-button {
       display: inline-block !important;
+      margin-top: 10px;
 
       &.sharer-0 label {
         color: @df-dark-gray !important;
