@@ -45,6 +45,10 @@ body {
   }
 }
 
+.title {
+  color: @red;
+}
+
 header {
   text-align: center;
   padding: 27px 5px 5px;
@@ -56,12 +60,7 @@ header {
     padding-right: 5px;
   }
 
-  .title {
-    color: @red;
-  }
-
   .chatter {
-
     a {
       color: inherit;
       border-bottom: 1px dotted @red;
@@ -164,11 +163,11 @@ button {
   }
 
   &.active {
-    background: @df-blue;
+    background: #589040;
     cursor: pointer;
     
     &:hover {
-      background: darken(@df-blue, 10%);
+      background: #447334;
     }
   }
 }
