@@ -16,10 +16,6 @@
 @special: 'Paytone One', sans-serif;
 @break: ~"(max-width: 840px)";
 
-.highlight {
-  color: @red;
-}
-
 body {
   font-family: @body;
   font-size: 18px;
@@ -30,6 +26,20 @@ body {
   @media @break {
     font-size: 16px;
     padding: 0;
+  }
+}
+
+.highlight {
+  color: @red;
+
+  &.wrong {
+    font-family: @special;
+    font-weight: 400;
+  }
+
+  &.correct {
+    .wrong;
+    color: @df-blue;
   }
 }
 
@@ -91,6 +101,7 @@ body {
 }
 
 .question-box {
+  margin-bottom: 1em;
 
   .inner {
     padding-top: 25px;
@@ -130,21 +141,23 @@ body {
     }
 
     .answer {
+
       .answer-box {
         margin-top: 10px;
         margin-bottom: 15px;
 
         .correct-answer {
-          font-family: @body;
-          font-size: 18px;
-          padding-left: 5px;
-          font-weight: bold;
+          font-size: 24px;
+
+          .fa-volume-up {
+            font-size: 20px;
+          }
+
         }
 
-        .desc {
-          font-family: @body;
-          font-size: 16px;
-          padding-top: 5px;
+        .description {
+          font-size: 18px;
+          margin: 10px 0 20px;
         }
       }
     }

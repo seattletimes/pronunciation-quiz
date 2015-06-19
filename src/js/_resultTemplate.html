@@ -6,20 +6,19 @@
   <div class="question-inner">
     <div class="answer">
       <div class="index"></div>
-      {{#hooray}}Right!{{/hooray}}
-      {{^hooray}}Wrong.{{/hooray}}
+      <span class="highlight correct">{{#hooray}}Right!{{/hooray}}</span>
+      <span class="highlight wrong">{{^hooray}}Wrong.{{/hooray}}</span>
 
       <div class="answer-box">
-        <span class="highlight">{{place}}</span>
         <span class="correct-answer">
-          "{{correct}}" <i class="listen fa fa-volume-up"></i>
+          {{place}} is pronounced “{{correct}}” <i class="listen fa fa-volume-up"></i>
           <audio src="./assets/{{audio}}"></audio>
         </span>
-        <div class="desc">{{description}}</div>
+        <div class="description">{{description}}</div>
       </div>
     </div>
 
 
-    <button class="next active">NEXT <i class="next-arrow fa fa-angle-double-right"></i></button>
+    <button class="next active">Next question <i class="fa fa-arrow-right"></i></button>
   </div>
 </div>
