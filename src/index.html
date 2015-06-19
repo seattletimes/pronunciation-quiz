@@ -11,51 +11,59 @@
   </head>
 
   <body>
+    <div class="outer">
+      <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
-    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+      <nav class="top-bar">
+        <a class="logo" href="http://seattletimes.com">
+          <img src="./assets/seattletimes.svg">
+        </a>
+      </nav>
 
-    <nav class="top-bar">
-      <a class="logo" href="http://seattletimes.com">
-        <img src="./assets/seattletimes.svg">
-      </a>
-    </nav>
+      <header>
+        <h1 class="title">Say it ain’t so!</h1>
+        <p class="chatter">Think you can pronounce the names of Washington towns and historical attractions? Test your local knowledge with <a href="#quiz">our quiz.</a><br>
+        <a class="share-button"></a>
+      </header>
 
-    <header>
-      <h1 class="title">Say it ain’t so!</h1>
-      <p class="chatter">Think you can pronounce the names of Washington towns and historical attractions? Test your local knowledge with <a href="#quiz">our quiz.</a><br>
-      <a class="share-button"></a>
-    </header>
+      <div class="quiz-container">
+        <div class="quiz-box"> 
 
-    <div class="quiz-container">
-      <div class="quiz-box"> 
+          <!-- START OF VIDEO -->
+          <div class='video-wrapper'>
+            <div class="video">
+              <iframe src='//players.brightcove.net/1509317113/default_default/index.html?videoId=4180582145001' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
+            </div>    
+          </div>
+          
+          <div style="text-align:center; background-color:pink;"><a href="https://vimeo.com/123372997">Watch real video here (password: sequim)</a></div>
 
-        <!-- START OF VIDEO -->
-        <div class='video-wrapper'>
-          <div class="video">
-            <iframe src='//players.brightcove.net/1509317113/default_default/index.html?videoId=4180582145001' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
-          </div>    
+          <!-- START OF QUIZ -->
+          <div class="quiz-header">
+            <h2 class="title" id="quiz">Your turn!</h2>
+            <p class="chatter">Test yourself on local pronunciations.
+              <br>Click on the audio icon <i class="fa fa-volume-up"></i> to hear each option.
+          </div>
+
+          <div class="question-box"></div>
         </div>
-        
-        <div style="text-align:center; background-color:pink;"><a href="https://vimeo.com/123372997">Watch real video here (password: sequim)</a></div>
 
-        <!-- START OF QUIZ -->
-        <div class="quiz-header">
-          <h2 class="title" id="quiz">Your turn!</h2>
-          <p class="chatter">Test yourself on local pronunciations.
-            <br>Click on the audio icon <i class="fa fa-volume-up"></i> to hear each option.
+        <div class="divider"></div>
+
+        <div class="credits">
+          Video by <span class="credit-name">Corinne Chin, Lauren Frohne, Aaron Spencer</span> &bull; Quiz and web development by <span class="credit-name">Audrey Carlsen</span>
         </div>
 
-        <div class="question-box"></div>
+        <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
       </div>
-
-      <div class="divider"></div>
-
-      <div class="credits">
-        <span class="credit">Video by <span class="credit-name">Corinne Chin, Lauren Frohne, Aaron Spencer</span> &bull; Quiz and web development by <span class="credit-name">Audrey Carlsen</span>
-      </div>
-
-      <%= t.include("partials/_ad.html", { type: "bannerBottom" }) %>
     </div>
+
+    <footer>
+      <a class="logo" href="http://seattletimes.com">
+        <img src="./assets/st-logo.png">
+      </a>
+      <a class="share-bottom"></a>
+    </footer>
 
     <script>
       <% 

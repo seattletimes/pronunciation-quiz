@@ -32,7 +32,7 @@ nav.top-bar {
   }
 }
 
-body {
+.outer {
   font-family: @body;
   font-size: 18px;
   max-width: 1200px;
@@ -178,12 +178,12 @@ button {
   padding: 15px;
   margin-bottom: 1em;
 
-  .credit {
-    white-space: nowrap;
+  @media @tablet { 
+    margin-bottom: 0;
+  }
 
-    .credit-name {
-      font-weight: 700;
-    }
+  .credit-name {
+    font-weight: 700;
   }
 }
 
@@ -196,3 +196,31 @@ button {
   }
 }
 
+footer {
+  background: @df-charcoal;
+  opacity: 0.95;
+  padding: 0 10px;
+  position: relative;
+  z-index: 99;
+  margin-top: 30px;
+
+  @media @tablet {
+    margin-top: 0px;
+  }
+
+  .logo {
+    float: left;
+    margin-right: 10px; 
+    
+    img {
+      margin-top: 10px;
+      height: 20px;
+    }
+  }
+
+  &::after {
+    clear: both;
+    content: " ";
+    display: block;
+  }
+}
