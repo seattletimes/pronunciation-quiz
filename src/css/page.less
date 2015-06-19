@@ -31,16 +31,16 @@ nav.top-bar {
 
 header {
   text-align: center;
-  padding-top: 27px;
+  padding: 27px 5px 5px;
 
-  @media @mobile {
-    padding-left: 5px;
+  @media @tablet {
+    padding-left: 8px;
     padding-right: 5px;
   }
 
   .title {
     font-family: @special;
-    color: @secondary;
+    color: @red;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3em;
@@ -60,6 +60,15 @@ header {
     font-weight: 600;
     margin: 0.5em auto 1em;
     max-width: 840px;
+
+    a {
+      color: inherit;
+      border-bottom: 1px dotted @red;
+
+      &:hover {
+        border-bottom: 2px solid @red;
+      }
+    }
 
     .share-button {
       display: inline-block !important;
@@ -107,7 +116,7 @@ button {
     cursor: pointer;
     
     &:hover {
-      background: @secondary;
+      background: @red;
     }
   }
 }

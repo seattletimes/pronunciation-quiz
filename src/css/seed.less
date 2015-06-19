@@ -9,7 +9,7 @@
 @import "page";
 
 @primary: @df-blue;
-@secondary: @df-maroon;
+@red: @df-maroon;
 @gray: @df-middle-gray;
 @dark-gray: @df-dark-gray;
 @block: @df-sans;
@@ -18,7 +18,7 @@
 @break: ~"(max-width: 840px)";
 
 .highlight {
-  color: @secondary;
+  color: @red;
 }
 
 body {
@@ -71,7 +71,7 @@ body {
 
 .quiz-button {
   font-size: 18px;
-  background: @secondary;
+  background: @red;
   cursor: pointer;
   display: inherit;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ body {
 
       &:checked + label::before {
         content: "\f111";
-        color: @secondary;
+        color: @red;
       }
     }
 
