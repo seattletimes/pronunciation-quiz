@@ -1,0 +1,157 @@
+@import "values";
+
+.quiz-header {
+  margin: 2em auto 1em;
+}
+
+.quiz-title {
+  color: @df-blue;
+}
+
+.quiz-button {
+  font-size: 18px;
+  background: @red;
+  cursor: pointer;
+  display: inherit;
+  text-transform: uppercase;
+  width: 161px;
+  height: 42px;
+  margin: auto;
+  margin-bottom: 25px;
+
+  @media @break {
+    font-size: 16px;
+    padding-top: 8px;
+    width: 165px;
+  }
+
+  &:hover {
+    background: @df-middle-gray;
+  }
+}
+
+.question-box {
+  margin-bottom: 1em;
+
+  .inner {
+    padding-top: 25px;
+    border-top: 8px solid @df-border-gray;
+    padding-bottom: 25px;
+
+    @media @break {
+      padding: 25px 40px;
+    }
+
+    @media @mobile {
+      padding: 25px 15px;
+    }
+  }
+
+  .map {
+    margin-left: 40px;
+    width: 200px;
+    float: left;
+    margin-right: 60px;
+    padding-top: 20px;
+  }
+
+  .question-inner {
+    display: inline-block;
+    width: 50%;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    .question, .answer {
+      font-family: @block;
+      font-weight: 600;
+      font-size: 1.4em;
+      color: @dark-gray;
+    }
+
+    .answer {
+
+      .answer-box {
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        .correct-answer {
+          font-size: 24px;
+
+          .fa-volume-up {
+            font-size: 20px;
+          }
+
+        }
+
+        .description {
+          font-size: 18px;
+          margin: 10px 0 20px;
+        }
+      }
+    }
+
+    input {
+      display: none;
+
+      & + label::before {
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f1db";
+        margin-right: 8px;
+      }
+
+      &:checked + label::before {
+        content: "\f111";
+        color: @red;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      color: @dark-gray;
+      font-weight: 600;
+
+      @media @mobile {
+        font-size: 16px;
+        padding: 8px;
+        padding-right: 0;
+      }
+    }
+
+    .listen {
+      padding: 5px;
+      color: @df-charcoal;
+      cursor: pointer;
+      border-bottom: 1px dotted @red;
+
+      &:hover {
+        color: @red;
+        border-color: @gray;
+      }
+    }
+  }
+
+  .index {
+    color: @gray;
+    font-size: 14px;
+  }
+
+  .result-name {
+    font-family: @block;
+    color: @dark-gray;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 10px 0;
+  }
+
+  .result-description {
+    font-family: @body;
+    margin: 0 auto 1em auto;
+    font-size: 1.2em;
+    color: @dark-gray;
+  }
+}
