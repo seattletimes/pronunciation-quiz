@@ -26,8 +26,20 @@ new Share(".share-button", {
 });
 
 var showQuestion = function(questionId) {
-  $(".question-box").html(ich.questionTemplate(quizData[id]));
+  var qBox = $(".question-box");
+  //remove old event listeners for memory obsessiveness
+  qBox.find("audio").off("loadstart canplay");
+  //create new question from template
+  qBox.html(ich.questionTemplate(quizData[id]));
   $(".index").html(id + " of " + Object.keys(quizData).length);
+  //get audio tags, add load indicators
+  var audio = qBox.find("audio");
+  audio.on("loadstart", function(e) {
+    $(this).siblings("i.fa").addClass("fa-spinner fa-spin");
+  });
+  audio.on("canplay", function(e) {
+    $(this).siblings("i.fa").removeClass("fa-spinner fa-spin");
+  });
 };
 
 var watchInput = function() {
