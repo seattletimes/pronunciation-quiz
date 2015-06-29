@@ -1,18 +1,18 @@
 [
   {
-    "title": "tourist",
+    "title": "visiting tourist",
     "min": "0",
     "max": "2",
     "description": "We get it, you’re using a guide book. But, make sure you look up pronunciations before asking for directions."
   },
   {
-    "title": "transplant",
+    "title": "recent transplant",
     "min": "3",
     "max": "5",
     "description": "You know some of Washington’s trickier pronunciations, but you won’t yet pass for a local."
   },
   {
-    "title": "local",
+    "title": "Pacific Northwest local",
     "min": "6",
     "max": "8",
     "description": "You’re from here, aren’t you? If not, you had us fooled."
