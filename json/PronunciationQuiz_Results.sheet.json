@@ -1,20 +1,26 @@
 [
   {
-    "title": "0",
+    "title": "tourist",
     "min": "0",
-    "max": "4",
-    "description": "Welcome to Washington!"
+    "max": "2",
+    "description": "We get it, you’re using a guide book. But, make sure you look up pronunciations before asking for directions."
   },
   {
-    "title": "5",
-    "min": "5",
+    "title": "transplant",
+    "min": "3",
+    "max": "5",
+    "description": "You know some of Washington’s trickier pronunciations, but you won’t yet pass for a local."
+  },
+  {
+    "title": "local",
+    "min": "6",
     "max": "8",
-    "description": "You don’t get out of Seattle much, do you?"
+    "description": "You’re from here, aren’t you? If not, you had us fooled."
   },
   {
-    "title": "9",
+    "title": "lifetime Washingtonian",
     "min": "9",
     "max": "12",
-    "description": "You’re clearly from here."
+    "description": "The few, the proud. Rejoice in your ability to pronounce Washington’s trickiest names."
   }
 ]
