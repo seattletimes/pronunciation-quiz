@@ -3,24 +3,32 @@
     "title": "visiting tourist",
     "min": "0",
     "max": "2",
-    "description": "We get it, you’re using a guide book. But, make sure you look up pronunciations before asking for directions."
+    "description": "We get it, you’re using a guide book. But, make sure you look up pronunciations before asking for directions.",
+    "image": "tourist.jpg",
+    "photographer": "Bettina Hansen"
   },
   {
     "title": "recent transplant",
     "min": "3",
     "max": "5",
-    "description": "You know some of Washington’s trickier pronunciations, but you won’t yet pass for a local."
+    "description": "You know some of Washington’s trickier pronunciations, but you won’t yet pass for a local.",
+    "image": "transplant.jpg",
+    "photographer": "Bettina Hansen"
   },
   {
     "title": "Pacific Northwest local",
     "min": "6",
     "max": "8",
-    "description": "You’re from here, aren’t you? If not, you had us fooled."
+    "description": "You’re from here, aren’t you? If not, you had us fooled.",
+    "image": "local.jpg",
+    "photographer": "Bettina Hansen"
   },
   {
     "title": "lifetime Washingtonian",
     "min": "9",
     "max": "12",
-    "description": "The few, the proud. Rejoice in your ability to pronounce Washington’s trickiest names."
+    "description": "The few, the proud. Rejoice in your ability to pronounce Washington’s trickiest names.",
+    "image": "washingtonian.jpg",
+    "photographer": "Greg Gilbert"
   }
 ]
