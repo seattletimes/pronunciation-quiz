@@ -21,8 +21,15 @@ ich.addTemplate("overviewTemplate", overviewTemplate);
 
 var Share = require("share");
 new Share(".share-button", {
+  description: "Think you can pronounce the names of Washington places? Test your local knowledge with our quiz.",
+  image: "http://apps-stage.seattletimesdata.com/extensive-voodoo/assets/fb_pysht.JPG",
   ui: {
     flyout: "top center"
+  },
+  networks: {
+    email: {
+      description: "Think you can pronounce the names of Washington places? Test your local knowledge with our quiz. http://apps-stage.seattletimesdata.com/extensive-voodoo/"
+    }
   }
 });
 
@@ -57,35 +64,35 @@ var watchInput = function() {
 };
 
 $(".quiz-container").on("click", ".submit", function() {
-      // score answer
-      var answerData = {};
-      answerData.place = quizData[id].place;
-      var correct = $("input:checked").val();
-      if (correct) { 
-        score += 1;
-        answerData.hooray = true;
-      }
-      // keep track of selected answer
-      quizData[id].answers.forEach(function(a) {
-        if (a.correct) {
-          answerData.correct = a.answer;
-          answerData.audio = a.audio;
-          answerData.image = quizData[id].image;
-          answerData.description = quizData[id].desc;
-        }
-      });
-
-      audioCleanup();
-      $(".question-box").html(ich.resultTemplate(answerData));
-      audioListeners();
-      $(".index").html(id + " of " + Object.keys(quizData).length);
-
-      // Change button text on last question
-      if (id == Object.keys(quizData).length) {
-        $(".next").html("See results");
-      }
-      watchNext();
+  // score answer
+  var answerData = {};
+  answerData.place = quizData[id].place;
+  var correct = $("input:checked").val();
+  if (correct) { 
+    score += 1;
+    answerData.hooray = true;
+  }
+  // keep track of selected answer
+  quizData[id].answers.forEach(function(a) {
+    if (a.correct) {
+      answerData.correct = a.answer;
+      answerData.audio = a.audio;
+      answerData.image = quizData[id].image;
+      answerData.description = quizData[id].desc;
+    }
   });
+
+  audioCleanup();
+  $(".question-box").html(ich.resultTemplate(answerData));
+  audioListeners();
+  $(".index").html(id + " of " + Object.keys(quizData).length);
+
+  // Change button text on last question
+  if (id == Object.keys(quizData).length) {
+    $(".next").html("See results");
+  }
+  watchNext();
+});
 
 
 var watchNext = function() {
@@ -121,8 +128,10 @@ var calculateResult = function() {
         ui: {
           flyout: "bottom right"
         },
-        facebook: {
-          caption: "I scored " + result.title + "/12! Think you can pronounce the names of these Washington places?"
+        networks: {
+          email: {
+            description: "I scored " + result.score + "/12! Think you can pronounce the names of these Washington places? http://apps-stage.seattletimesdata.com/extensive-voodoo/"
+          }
         }
       });
       $(".question-box").html(ich.overviewTemplate(result));
