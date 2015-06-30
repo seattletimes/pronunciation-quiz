@@ -73,25 +73,31 @@ header {
         border: none;
       }
     }
+  }
+}
 
-    .share-button {
-      display: inline-block !important;
-      margin-top: 10px;
+.share-button, .share-results {
+  display: inline-block !important;
+  margin-top: 10px;
 
-      &.sharer-0 label {
-        color: @df-dark-gray !important;
-        background: @df-light-gray !important;
-        padding: 6px 10px !important;
-        border-radius: 0 !important;
-        margin-left: 2px;
+  &.sharer-0 label {
+    color: @df-dark-gray !important;
+    background: @df-light-gray !important;
+    padding: 6px 10px !important;
+    border-radius: 0 !important;
+    margin-left: 2px;
 
-        &:hover {
-          background: @df-border-gray !important;
-          color: @df-charcoal !important;
-        }
-      }
+    &:hover {
+      background: @df-border-gray !important;
+      color: @df-charcoal !important;
     }
   }
+}
+
+.share-results {
+  position: absolute;
+  bottom: -75px;
+  left: 10px;
 }
 
 // GLOBAL TITLE AND CHATTER STYLES

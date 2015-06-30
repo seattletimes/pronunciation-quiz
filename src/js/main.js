@@ -6,6 +6,7 @@ require("./lib/ads");
 
 var $ = require("jquery");
 var ich = require("icanhaz");
+var Share = require("share");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 var overviewTemplate = require("./_overviewTemplate.html");
@@ -114,6 +115,16 @@ var calculateResult = function() {
       } else {
         result.color = "#DE5636"
       }
+      new Share(".share-results", {
+        description: "I scored " + result.score + "/12! Think you can pronounce the names of these Washington places?",
+        image: result.image,
+        ui: {
+          flyout: "bottom right"
+        },
+        facebook: {
+          caption: "I scored " + result.title + "/12! Think you can pronounce the names of these Washington places?"
+        }
+      });
       $(".question-box").html(ich.overviewTemplate(result));
     }
   }
