@@ -9,11 +9,11 @@
       "path": ""
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "Say It Ain't So!",
+  "description": "Think you can pronounce the names of Washington places? Test your local knowledge with our quiz.",
+  "url": "http://apps-stage.seattletimesdata.com/extensive-voodoo/",
   "slug": "",
-  "tags": [],
+  "tags": ["quiz", "Washington", "pronounce", "places", "names", "Puyallup", "Sequim", "video"],
   "production": false,
-  "embedded": true
+  "embedded": false
 }
