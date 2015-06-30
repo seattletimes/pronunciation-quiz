@@ -10,7 +10,7 @@ var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 var overviewTemplate = require("./_overviewTemplate.html");
 
-var score = 0;
+var score = 3;
 var id = 1;
 
 // Set up templates
@@ -89,15 +89,15 @@ $(".quiz-container").on("click", ".submit", function() {
 
 var watchNext = function() {
   $(".next").click(function() {
-    if (id < Object.keys(quizData).length) {
-      // move on to next question
-      id += 1;
-      showQuestion(id);
-      $(".next").removeClass("active");
-      $(".next").attr("disabled", true);
-    } else {
+    // if (id < Object.keys(quizData).length) {
+    //   // move on to next question
+    //   id += 1;
+    //   showQuestion(id);
+    //   $(".next").removeClass("active");
+    //   $(".next").attr("disabled", true);
+    // } else {
       calculateResult();
-    }
+    // }
   });
 };
 
@@ -107,9 +107,13 @@ var calculateResult = function() {
     if (score >= result.min && score <= result.max) {
       // display result
       result.score = score;
-      var answerKey = [];
-      for (var question in quizData) { answerKey.push(quizData[question]) }
-      result.answerKey = answerKey;
+      if (result.score > 5) { 
+        result.color = "#589040"
+      } else if (result.score > 2) { 
+        result.color = "#F5AE3F"
+      } else {
+        result.color = "#DE5636"
+      }
       $(".question-box").html(ich.overviewTemplate(result));
     }
   }
