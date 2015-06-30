@@ -90,15 +90,15 @@ $(".quiz-container").on("click", ".submit", function() {
 
 var watchNext = function() {
   $(".next").click(function() {
-    // if (id < Object.keys(quizData).length) {
-    //   // move on to next question
-    //   id += 1;
-    //   showQuestion(id);
-    //   $(".next").removeClass("active");
-    //   $(".next").attr("disabled", true);
-    // } else {
+    if (id < Object.keys(quizData).length) {
+      // move on to next question
+      id += 1;
+      showQuestion(id);
+      $(".next").removeClass("active");
+      $(".next").attr("disabled", true);
+    } else {
       calculateResult();
-    // }
+    }
   });
 };
 
