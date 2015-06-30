@@ -117,7 +117,7 @@ var calculateResult = function() {
       }
       new Share(".share-results", {
         description: "I scored " + result.score + "/12! Think you can pronounce the names of these Washington places?",
-        image: "./assets/results/" + result.image,
+        image: "http://apps-stage.seattletimesdata.com/extensive-voodoo/assets/fb_pysht.JPG",
         ui: {
           flyout: "bottom right"
         },
