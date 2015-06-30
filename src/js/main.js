@@ -25,21 +25,26 @@ new Share(".share-button", {
   }
 });
 
-var showQuestion = function(questionId) {
-  var qBox = $(".question-box");
-  //remove old event listeners for memory obsessiveness
-  qBox.find("audio").off("loadstart canplay");
-  //create new question from template
-  qBox.html(ich.questionTemplate(quizData[id]));
-  $(".index").html(id + " of " + Object.keys(quizData).length);
-  //get audio tags, add load indicators
-  var audio = qBox.find("audio");
-  audio.on("loadstart", function(e) {
+var audioCleanup = function() {
+  $(".question-box audio").off("loadstart canplay");
+};
+
+var audioListeners = function() {
+  var audio = $(".question-box audio");
+  audio.on("loadstart play", function(e) {
     $(this).siblings("i.fa").addClass("fa-spinner fa-spin");
   });
-  audio.on("canplay", function(e) {
+  audio.on("canplaythrough suspend ended timeupdate", function(e) {
     $(this).siblings("i.fa").removeClass("fa-spinner fa-spin");
   });
+};
+
+var showQuestion = function(questionId) {
+  audioCleanup();
+  //create new question from template
+  $(".question-box").html(ich.questionTemplate(quizData[id]));
+  $(".index").html(id + " of " + Object.keys(quizData).length);
+  audioListeners();
 };
 
 var watchInput = function() {
@@ -69,7 +74,9 @@ $(".quiz-container").on("click", ".submit", function() {
         }
       });
 
+      audioCleanup();
       $(".question-box").html(ich.resultTemplate(answerData));
+      audioListeners();
       $(".index").html(id + " of " + Object.keys(quizData).length);
 
       // Change button text on last question
