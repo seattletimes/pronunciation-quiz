@@ -62,11 +62,10 @@ header {
 
   .chatter {
     a {
-      color: @gray;
-      border-bottom: 2px solid;
+      color: @df-blue;
 
       &:hover {
-        color: @red;
+        border-bottom: 2px solid;
       }
 
       &.share-button {
@@ -175,11 +174,11 @@ button {
   }
 
   &.active {
-    background: #589040;
+    background: @df-blue;
     cursor: pointer;
     
     &:hover {
-      background: #447334;
+      background: darken(@df-blue, 10%);
     }
   }
 }
@@ -203,10 +202,10 @@ button {
   margin-bottom: 20px;
 
   a {
-    color: @gray;
+    color: @df-blue;
 
     &:hover {
-      color: @red;
+      text-decoration: underline;
     }
   }
 }

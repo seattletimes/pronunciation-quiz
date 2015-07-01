@@ -22,7 +22,7 @@ ich.addTemplate("overviewTemplate", overviewTemplate);
 var Share = require("share");
 new Share(".share-button", {
   description: "Think you can pronounce the names of Washington places? Test your local knowledge with our quiz.",
-  image: "http://apps-stage.seattletimesdata.com/extensive-voodoo/assets/fb_pysht.JPG",
+  image: "http://projects.seattletimes.com/2015/pronunciation-quiz/assets/fb_pysht.JPG",
   ui: {
     flyout: "top center"
   },
@@ -124,7 +124,7 @@ var calculateResult = function() {
       }
       new Share(".share-results", {
         description: "I scored " + result.score + "/12! Think you can pronounce the names of these Washington places?",
-        image: "http://apps-stage.seattletimesdata.com/extensive-voodoo/assets/fb_pysht.JPG",
+        image: "http://projects.seattletimes.com/2015/pronunciation-quiz/assets/fb_pysht.JPG",
         ui: {
           flyout: "bottom right"
         },

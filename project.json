@@ -5,15 +5,15 @@
       "path": "extensive-voodoo"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2015/pronunciation-quiz"
     }
   },
   "title": "Say it ain't so! See if you can pronounce Washington place names",
   "description": "Think you can pronounce the names of Washington places? Test your local knowledge with our quiz.",
-  "url": "http://apps-stage.seattletimesdata.com/extensive-voodoo/",
+  "url": "http://projects.seattletimes.com/2015/pronunciation-quiz/",
   "slug": "",
   "tags": ["quiz", "Washington", "pronounce", "places", "names", "Puyallup", "Sequim", "video"],
-  "production": false,
+  "production": true,
   "embedded": false
 }
