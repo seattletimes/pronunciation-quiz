@@ -7,6 +7,7 @@
 
 @import "seattletimes";
 @import "page";
+@import "flexbox";
 @import "quiz";
 
 @red: @df-maroon;
@@ -29,5 +30,48 @@
   &.correct {
     .wrong;
     color: #589040;
+  }
+}
+
+  .thin-div {
+    border-bottom: 1px solid @df-light-gray;
+    margin-bottom: 15px;
+
+    .center {
+      position: relative;
+      top: 15px;
+      margin: auto;
+      width: 100px;
+      text-align: center;
+      font-size: 20px;
+      background: white;
+    }
+  }
+
+
+.dont-miss {
+  .display-flex;
+  .flex-wrap(wrap);
+  margin-bottom: 20px;
+
+  .story {
+    .flex(1 1 25%);
+    padding: 10px;
+
+    @media @mobile {
+      .flex(1 1 50%)
+    }
+  }
+  .small {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  a {
+    color: @df-dark-gray;
+    transition: color .1s linear;
+
+    &:hover {
+      color: @df-blue;
+    }
   }
 }
