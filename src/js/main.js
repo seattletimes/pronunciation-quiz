@@ -1,8 +1,5 @@
-//Use CommonJS style via browserify to load other modules
 require("./lib/social");
 require("./lib/ads");
-
-//Use CommonJS style via browserify to load other modules
 
 var $ = require("jquery");
 var ich = require("icanhaz");
@@ -10,6 +7,8 @@ var Share = require("share");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 var overviewTemplate = require("./_overviewTemplate.html");
+
+var track = require("./lib/tracking");
 
 var score = 0;
 var id = 1;
@@ -48,6 +47,7 @@ var audioListeners = function() {
 };
 
 var showQuestion = function(questionId) {
+  track("interactive", "pronunciation-quiz", "question-" + questionId);
   audioCleanup();
   //create new question from template
   $(".question-box").html(ich.questionTemplate(quizData[id]));
@@ -122,6 +122,7 @@ var calculateResult = function() {
       } else {
         result.color = "#DE5636"
       }
+      track("interactive", "pronunciation-quiz", "finished-" + score);
       new Share(".share-results", {
         description: "I scored " + result.score + "/12! Think you can pronounce the names of these Washington places?",
         image: "http://projects.seattletimes.com/2015/pronunciation-quiz/assets/fb_sequim.JPG",
@@ -145,3 +146,5 @@ watchInput();
 $(".quiz-container").on("click", ".listen", function(e){
   $(e.target).next("audio")[0].play();
 });
+
+track("quiz-loaded");
