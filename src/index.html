@@ -32,7 +32,27 @@
           <!-- START OF VIDEO -->
           <div class='video-wrapper'>
             <div class="video">
-              <iframe src='//players.brightcove.net/1509317113/default_default/index.html?videoId=4187256471001' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe> 
+              <!-- Start of Brightcove Player -->
+
+              <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+              <object id="myExperience4187256471001" class="BrightcoveExperience">
+                <param name="bgcolor" value="#FFFFFF" />
+                <param name="width" value="630" />
+                <param name="height" value="354" />
+                <param name="playerID" value="1815105101001" />
+                <param name="playerKey" value="AQ~~,AAAAAFn2Wfk~,QUqnr01qM6bpNZuy12T2qOqbWE8EnGeJ" />
+                <param name="isVid" value="true" />
+                <param name="isUI" value="true" />
+                <param name="dynamicStreaming" value="true" />
+                
+                <param name="@videoPlayer" value="4187256471001" />
+              </object>
+
+              <script>brightcove.createExperiences();</script>
+
+              <!-- End of Brightcove Player -->
+
             </div>    
           </div>
 
