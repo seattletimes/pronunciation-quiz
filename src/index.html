@@ -7,13 +7,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Paytone+One:700,400,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <%= t.include("partials/_adHead.html") %>
   </head>
 
   <body>
     <div class="outer">
-      <%= t.include("partials/_ad.html", { type: "banner" }) %>
-
+      <!-- <%= t.include("partials/_ad.html", { type: "banner" }) %> -->
       <nav class="top-bar">
         <a class="logo" href="http://seattletimes.com">
           <img src="./assets/seattletimes.svg">
@@ -22,8 +20,8 @@
 
       <header>
         <h1 class="title">Can you say<br>Skamoka-<em>what</em>?</h1>
-        <p class="chatter">Think you can pronounce the names of Washington towns and historical attractions? Test your local knowledge with <a href="#quiz">our quiz</a>.<br>
-        <a class="share-button"></a>
+        <p class="chatter">Think you can pronounce the names of Washington towns and historical attractions? Test your local knowledge with <a href="#quiz">our quiz</a>.
+        <!-- <a class="share-button"></a> -->
       </header>
 
       <div class="quiz-container">
@@ -32,27 +30,7 @@
           <!-- START OF VIDEO -->
           <div class='video-wrapper'>
             <div class="video">
-              <!-- Start of Brightcove Player -->
-
-              <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-
-              <object id="myExperience4187256471001" class="BrightcoveExperience">
-                <param name="bgcolor" value="#FFFFFF" />
-                <param name="width" value="630" />
-                <param name="height" value="354" />
-                <param name="playerID" value="1815105101001" />
-                <param name="playerKey" value="AQ~~,AAAAAFn2Wfk~,QUqnr01qM6bpNZuy12T2qOqbWE8EnGeJ" />
-                <param name="isVid" value="true" />
-                <param name="isUI" value="true" />
-                <param name="dynamicStreaming" value="true" />
-                
-                <param name="@videoPlayer" value="4187256471001" />
-              </object>
-
-              <script>brightcove.createExperiences();</script>
-
-              <!-- End of Brightcove Player -->
-
+              <script src="https://cdn.jwplayer.com/players/axLN4Qz5-UXknQA8J.js"></script>
             </div>    
           </div>
 
@@ -79,9 +57,7 @@
             <div class="center">Don't Miss</div>
           </div>
 
-
         <div class="dont-miss">
-
 
           <div class="story">
             <div class="padded">
@@ -137,7 +113,7 @@
       <a class="logo" href="http://seattletimes.com">
         <img src="./assets/st-logo.png">
       </a>
-      <a class="share-bottom"></a>
+      <!-- <a class="share-bottom"></a> -->
     </footer>
 
     <script>
