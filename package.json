@@ -8,7 +8,7 @@
     "url": "https://github.com/seattletimes/pronunciation-quiz.git"
   },
   "dependencies": {
-    "async": "^0.9.0",
+    "async": "^2.6.4",
     "aws-sdk": "^2.0.0-rc.19",
     "babelify": "^5.0.4",
     "browserify": "^6.2.0",
